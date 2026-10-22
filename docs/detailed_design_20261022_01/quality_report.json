@@ -1,0 +1,65 @@
+{
+  "passed": true,
+  "verified_utc": "2026-10-22T03:10:48.419228+00:00",
+  "errors": [],
+  "implementation_baseline": "672fa48",
+  "scope": "Detailed design document; no new training or simulation",
+  "pages": 52,
+  "chapters": 12,
+  "appendices": 3,
+  "cjk_characters": 21607,
+  "numbered_equations": 31,
+  "office_math_objects": 139,
+  "tables": 16,
+  "figures": 9,
+  "references": 10,
+  "native_word_fields_updated": true,
+  "blank_body_pages": [],
+  "math_check_scope": "Every converted expression checked for unconverted commands and minus preservation, including after Word save; every page visually inspected separately.",
+  "visual_reviews": [
+    {
+      "agent": "design_models",
+      "pages": [
+        1,
+        17
+      ],
+      "all_pages_opened_original": true,
+      "passed": true
+    },
+    {
+      "agent": "design_recovery",
+      "pages": [
+        18,
+        35
+      ],
+      "all_pages_opened_original": true,
+      "passed": true
+    },
+    {
+      "agent": "design_references",
+      "pages": [
+        36,
+        52
+      ],
+      "all_pages_opened_original": true,
+      "passed": true
+    }
+  ],
+  "conversion_backend": "Microsoft Word native PDF export plus packaged render_docx.py rasterizer; LibreOffice absent",
+  "final_outputs_sha256": {
+    "机器人抓取搬运与失败恢复系统详细设计.docx": "d7dea40aa9826df8485c4cb5e90e98f379f1e5c7d7a8a29d5a86b2a2f3c14adb",
+    "详细设计.md": "cbbbfda0bf8d8718545a637dda3d04893513389bafbb013c3f3a6a2f9893985c"
+  },
+  "internal_pdf_sha256": "32b222245505ce7d9d64593a9a75ddafbe884bc56cd410a4b72b2f9f49961af2",
+  "supplementary_source_sha256": {
+    "reproduction/recovery_v5_20261012_01/recovery_controller.py": "88ee635f5cefbe30927d549910a5237b82f8275c0ea88da273874c4e7b637ecf",
+    "reproduction/recovery_v5_20261012_01/clearance.py": "9b6e90f85f2e59b464337c8e898f292cec213951eefe1a6e904919a72431a79e",
+    "reproduction/recovery_v5_20261012_01/gripper_geometry.json": "62b3cc5c39077551e89251313831b227e0db84444d7c179a7b00b86c1f724c32",
+    ".venv/Lib/site-packages/robosuite/environments/manipulation/pick_place.py": "1abafb93f272c6ccda7f207b6c5c12c0c9b2f97087d60754dba402786c70c4ee"
+  },
+  "original_research_changes_outside_navigation": [],
+  "template_scope": "Generic Chinese undergraduate technical document; no institution template was supplied.",
+  "source_and_experiment_cross_review": "Completed before layout; found overbroad legacy validation claim, undefined success criterion and aggregate-weight caveat, all corrected.",
+  "qa_intermediates": "C:\\Users\\Livio\\AppData\\Local\\Temp\\robot_can_design_20261022_01\\render_v3",
+  "not_a_new_experiment_sample": true
+}

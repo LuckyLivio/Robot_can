@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-22",
+  "scope": "Standalone figure images; document pagination is checked by the parent workflow",
+  "method": "All six current PNG files reopened with tools.view_image(detail=original) after regeneration and checked against the current readers, writers and control functions",
+  "passed": true,
+  "figures_reviewed": [
+    "architecture.png",
+    "world_model.png",
+    "candidate_flow.png",
+    "recovery_flow.png",
+    "data_entities.png",
+    "control_sequence.png"
+  ],
+  "checks": [
+    "Text is legible and remains inside image bounds",
+    "Arrow paths do not pass through unrelated control boxes",
+    "World-model offline supervision is separated from online frozen inference",
+    "The pending D2 queue is an independent input to world-model comparison",
+    "Candidate sequences preserve two real pending commands and repeat each candidate six times",
+    "The recovery exhausted state passes policy actions through instead of claiming an emergency stop",
+    "Data entities are conceptual file relations and do not claim a SQL database",
+    "The control sequence distinguishes submitted and executed actions"
+  ],
+  "corrections_after_first_review": [
+    "Replaced unsupported Unicode subscripts with readable plain c0/c1/c2/c3/ck and q0/q1",
+    "Rerouted the recovery retry edge below all exception boxes to remove an ambiguous crossing",
+    "Reopened candidate_flow.png and recovery_flow.png after their final corrections"
+  ],
+  "current_code_audit_corrections": [
+    "The world-model diagram explicitly includes candidate commands and the actual D2 queue in online inputs",
+    "The readout-head input is the standardized predicted state, not the denormalized output tensor",
+    "Ordinary unheld recovery triggers enter RETRACT; NORMAL held-stall alone supplies holding=True and bypasses to LIFT",
+    "Retryable timeout and TEST_LIFT failure call start_attempt with default holding=False and return to RETRACT only when another attempt may start",
+    "The retry decision tests remaining attempt count; a running second attempt is not marked exhausted immediately",
+    "Active recovery outside the workspace bypasses retries and enters EXHAUSTED",
+    "Loss during LIFT, CARRY or PLACE while inside the target XY area bypasses retries and enters RELEASE",
+    "The recovery figure was increased from 1900x900 to 1900x1085 to keep all three bypass notes at 38 pixels without crossing the main flow"
+  ],
+  "current_source_locations": [
+    "world_model.py:18-29",
+    "robot_can_v2/evaluate.py:68-86",
+    "robot_can_v2/evaluate.py:177-202",
+    "reproduction/recovery_v5_20261012_01/recovery_controller.py:118-128",
+    "reproduction/recovery_v5_20261012_01/recovery_controller.py:324-385",
+    "collect_rollout_branches.py:76-88",
+    "collect_rollout_branches.py:156-188"
+  ],
+  "minimum_label_size": "38 pixels at 1900 pixels width, approximately 9.07 points when printed at 16 cm width",
+  "figure_hash_manifest": "figure_manifest.json"
+}

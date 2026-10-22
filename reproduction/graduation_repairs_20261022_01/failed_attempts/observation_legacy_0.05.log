@@ -1,0 +1,63 @@
+[robosuite WARNING] Could not import robosuite_models. Some robots may not be available. If you want to use these robots, please install robosuite_models from source (https://github.com/ARISE-Initiative/robosuite_models) or through pip install. (__init__.py:30)
+[robosuite WARNING] Could not load the mink-based whole-body IK. Make sure you install related import properly, otherwise you will not be able to use the default IK controller setting for GR1 robot. (__init__.py:40)
+{"job": "observation_legacy_0.05", "demo": "demo_22000000", "success": true, "steps": 117}
+{"job": "observation_legacy_0.05", "demo": "demo_22000001", "success": true, "steps": 89}
+{"job": "observation_legacy_0.05", "demo": "demo_22000002", "success": true, "steps": 116}
+{"job": "observation_legacy_0.05", "demo": "demo_22000003", "success": true, "steps": 103}
+{"job": "observation_legacy_0.05", "demo": "demo_22000004", "success": true, "steps": 134}
+{"job": "observation_legacy_0.05", "demo": "demo_22000005", "success": true, "steps": 116}
+{"job": "observation_legacy_0.05", "demo": "demo_22000006", "success": false, "steps": 400}
+{"job": "observation_legacy_0.05", "demo": "demo_22000007", "success": true, "steps": 141}
+{"job": "observation_legacy_0.05", "demo": "demo_22000008", "success": true, "steps": 79}
+{"job": "observation_legacy_0.05", "demo": "demo_22000009", "success": false, "steps": 400}
+{"job": "observation_legacy_0.05", "demo": "demo_22000010", "success": true, "steps": 114}
+{"job": "observation_legacy_0.05", "demo": "demo_22000011", "success": true, "steps": 80}
+{"job": "observation_legacy_0.05", "demo": "demo_22000012", "success": true, "steps": 111}
+{"job": "observation_legacy_0.05", "demo": "demo_22000013", "success": true, "steps": 111}
+{"job": "observation_legacy_0.05", "demo": "demo_22000014", "success": true, "steps": 115}
+{"job": "observation_legacy_0.05", "demo": "demo_22000015", "success": false, "steps": 400}
+{"job": "observation_legacy_0.05", "demo": "demo_22000016", "success": true, "steps": 130}
+{"job": "observation_legacy_0.05", "demo": "demo_22000017", "success": false, "steps": 400}
+{"job": "observation_legacy_0.05", "demo": "demo_22000018", "success": true, "steps": 108}
+{"job": "observation_legacy_0.05", "demo": "demo_22000019", "success": true, "steps": 109}
+{"job": "observation_legacy_0.05", "demo": "demo_22000020", "success": true, "steps": 99}
+{"job": "observation_legacy_0.05", "demo": "demo_22000021", "success": true, "steps": 116}
+{"job": "observation_legacy_0.05", "demo": "demo_22000022", "success": true, "steps": 112}
+{"job": "observation_legacy_0.05", "demo": "demo_22000023", "success": true, "steps": 127}
+{"job": "observation_legacy_0.05", "demo": "demo_22000024", "success": true, "steps": 113}
+{"job": "observation_legacy_0.05", "demo": "demo_22000025", "success": true, "steps": 116}
+{"job": "observation_legacy_0.05", "demo": "demo_22000026", "success": true, "steps": 112}
+{"job": "observation_legacy_0.05", "demo": "demo_22000027", "success": true, "steps": 90}
+{"job": "observation_legacy_0.05", "demo": "demo_22000028", "success": true, "steps": 122}
+{"job": "observation_legacy_0.05", "demo": "demo_22000029", "success": true, "steps": 118}
+{"job": "observation_legacy_0.05", "demo": "demo_22000030", "success": true, "steps": 123}
+{"job": "observation_legacy_0.05", "demo": "demo_22000031", "success": true, "steps": 98}
+Traceback (most recent call last):
+  File "C:\Users\Livio\Desktop\robot_can\robot_can_v2\evaluate.py", line 214, in run
+    payload['records'].append(record); trace.flush(); settling_trace.flush(); save('running')
+  File "C:\Users\Livio\Desktop\robot_can\robot_can_v2\evaluate.py", line 148, in save
+    result_path.write_text(json.dumps(payload, indent=2, allow_nan=False), encoding='utf-8')
+  File "C:\Program Files\Python310\lib\pathlib.py", line 1154, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+  File "C:\Program Files\Python310\lib\pathlib.py", line 1119, in open
+    return self._accessor.open(self, mode, buffering, encoding, errors,
+OSError: [Errno 22] Invalid argument: 'C:\\Users\\Livio\\Desktop\\robot_can\\reproduction\\graduation_repairs_20261022_01\\confirmation\\observation_legacy_0.05\\result.json'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Program Files\Python310\lib\runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "C:\Program Files\Python310\lib\runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "C:\Users\Livio\Desktop\robot_can\robot_can_v2\evaluate.py", line 234, in <module>
+    run(job, args.output_dir)
+  File "C:\Users\Livio\Desktop\robot_can\robot_can_v2\evaluate.py", line 218, in run
+    payload['error'] = repr(error); save('failed')
+  File "C:\Users\Livio\Desktop\robot_can\robot_can_v2\evaluate.py", line 148, in save
+    result_path.write_text(json.dumps(payload, indent=2, allow_nan=False), encoding='utf-8')
+  File "C:\Program Files\Python310\lib\pathlib.py", line 1154, in write_text
+    with self.open(mode='w', encoding=encoding, errors=errors, newline=newline) as f:
+  File "C:\Program Files\Python310\lib\pathlib.py", line 1119, in open
+    return self._accessor.open(self, mode, buffering, encoding, errors,
+OSError: [Errno 22] Invalid argument: 'C:\\Users\\Livio\\Desktop\\robot_can\\reproduction\\graduation_repairs_20261022_01\\confirmation\\observation_legacy_0.05\\result.json'

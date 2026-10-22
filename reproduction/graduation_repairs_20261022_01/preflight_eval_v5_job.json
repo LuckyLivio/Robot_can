@@ -1,0 +1,14 @@
+[
+  {
+    "id": "preflight_original_v5_bc_demo0_clean",
+    "method": "bc",
+    "controller": "v5",
+    "semantics": "legacy",
+    "policy": "policy/bc_chunk_dev_v4/policy_15000.pt",
+    "delay": 2,
+    "steps": 400,
+    "noise": 0.0,
+    "settle_steps": 20,
+    "demos": ["demo_0"]
+  }
+]

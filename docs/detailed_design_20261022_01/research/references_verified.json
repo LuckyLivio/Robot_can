@@ -1,0 +1,258 @@
+{
+  "schema_version": 1,
+  "verified_date": "2026-10-22",
+  "purpose_zh": "本科毕业设计详细设计文档所需的有限一手参考文献核验；不是系统综述或创新性穷尽检索。",
+  "verification_scope_zh": "使用论文原始发布页、正式出版社条目、作者或项目官方托管原文及官方文档核对书目信息与可支持论点。未验证每篇全文的所有论断，不以引用替代本项目实验。",
+  "citation_policy_zh": "正文以 [1]—[10] 顺序引用；只在理论、平台和接口说明处使用，项目结果以仓库锁定证据为准。不虚构 DOI、出版页码或算法复现范围。",
+  "reference_count": 10,
+  "references": [
+    {
+      "id": 1,
+      "citation_key": "zhu2020robosuite",
+      "title": "robosuite: A Modular Simulation Framework and Benchmark for Robot Learning",
+      "authors": [
+        "Yuke Zhu",
+        "Josiah Wong",
+        "Ajay Mandlekar",
+        "Roberto Martín-Martín"
+      ],
+      "year": 2020,
+      "venue": "arXiv preprint arXiv:2009.12293v1",
+      "doi": "10.48550/arXiv.2009.12293",
+      "stable_url": "https://arxiv.org/abs/2009.12293v1",
+      "verifiedURL": [
+        "https://arxiv.org/abs/2009.12293v1",
+        "https://robosuite.ai/"
+      ],
+      "verified_metadata": "核对 v1 题名、4 位作者、2020-09-25 提交日期、摘要及 arXiv 标识；arXiv 总条目 2025 修订版增加作者，因此本文固定引用 v1。",
+      "supports": "robosuite 在 MuJoCo 上组织机器人、控制器和操作任务，并提供可复现实验环境。",
+      "project_limited_sentence": "本系统基于 robosuite 构建机器人抓取搬运仿真；平台、机器人模型及基础任务属于已有开源基础，本项目贡献限于其上的观测契约、候选动作评估、失败恢复与验证流程。",
+      "does_not_support": "不能据此声称本项目创建了物理引擎、发明了抓取任务，或已具备真机有效性。",
+      "bibliography_zh": "ZHU Y, WONG J, MANDLEKAR A, et al. robosuite: A Modular Simulation Framework and Benchmark for Robot Learning[EB/OL]. arXiv:2009.12293v1, 2020[2026-10-22]. https://arxiv.org/abs/2009.12293v1."
+    },
+    {
+      "id": 2,
+      "citation_key": "mandlekar2022whatmatters",
+      "title": "What Matters in Learning from Offline Human Demonstrations for Robot Manipulation",
+      "authors": [
+        "Ajay Mandlekar",
+        "Danfei Xu",
+        "Josiah Wong",
+        "Soroush Nasiriany",
+        "Chen Wang",
+        "Rohun Kulkarni",
+        "Li Fei-Fei",
+        "Silvio Savarese",
+        "Yuke Zhu",
+        "Roberto Martín-Martín"
+      ],
+      "year": 2022,
+      "conference_event_year": 2021,
+      "venue": "Proceedings of the 5th Conference on Robot Learning",
+      "series": "Proceedings of Machine Learning Research",
+      "volume": "164",
+      "pages": "1678-1690",
+      "doi": null,
+      "stable_url": "https://proceedings.mlr.press/v164/mandlekar22a.html",
+      "verifiedURL": [
+        "https://proceedings.mlr.press/v164/mandlekar22a.html",
+        "https://proceedings.mlr.press/v164/mandlekar22a/mandlekar22a.pdf"
+      ],
+      "verified_metadata": "核对 PMLR 官方题名、10 位作者、卷 164、页码和正式出版年 2022；会议 CoRL 2021 与出版年必须区分。",
+      "supports": "离线人类示范学习的表现受数据质量、模型设计和停止准则影响；开源数据与实现有助于公平比较。",
+      "project_limited_sentence": "本项目采用离线示范训练行为克隆策略，固定数据划分与检查点选择规则；训练损失及验证损失仅用于诊断，闭环任务成功率通过独立仿真起点评估。",
+      "does_not_support": "不能据此把本项目自己的网络、数据处理或性能结果称为 robomimic 论文的完整复现，也不能把本项目开发集结果当作独立确认结果。",
+      "bibliography_zh": "MANDLEKAR A, XU D, WONG J, et al. What Matters in Learning from Offline Human Demonstrations for Robot Manipulation[C]//Proceedings of the 5th Conference on Robot Learning. PMLR, 2022, 164: 1678-1690."
+    },
+    {
+      "id": 3,
+      "citation_key": "todorov2012mujoco",
+      "title": "MuJoCo: A physics engine for model-based control",
+      "authors": [
+        "Emanuel Todorov",
+        "Tom Erez",
+        "Yuval Tassa"
+      ],
+      "year": 2012,
+      "venue": "2012 IEEE/RSJ International Conference on Intelligent Robots and Systems",
+      "doi": "10.1109/IROS.2012.6386109",
+      "stable_url": "https://roboti.us/lab/papers/TodorovIROS12.pdf",
+      "verifiedURL": [
+        "https://roboti.us/lab/papers.html",
+        "https://roboti.us/lab/papers/TodorovIROS12.pdf",
+        "https://ieeexplore.ieee.org/document/6386109",
+        "https://mujoco.readthedocs.io/en/stable/overview.html"
+      ],
+      "verified_metadata": "作者实验室文献页确认 2012、IROS、3 位作者；作者原文 PDF 确认题名及物理引擎机制。IEEE 正式文档号为 6386109，但正文访问受反机器人页面限制，因此不以该页面声称全文复核；未列未经本次一手全文确认的出版页码。",
+      "supports": "MuJoCo 提供多关节动力学和接触动力学仿真，是本项目机器人与物体相互作用的物理计算基础。",
+      "project_limited_sentence": "本项目用 MuJoCo 推进仿真状态，并记录接触、位姿和动作轨迹；仿真结果反映固定模型、接触参数和初始化分布下的表现，不能直接外推到真实机器人。",
+      "does_not_support": "使用 MuJoCo 本身不保证无穿透、绝对物理准确性或仿真到现实迁移成功。",
+      "bibliography_zh": "TODOROV E, EREZ T, TASSA Y. MuJoCo: A physics engine for model-based control[C]//2012 IEEE/RSJ International Conference on Intelligent Robots and Systems. IEEE, 2012. DOI: 10.1109/IROS.2012.6386109."
+    },
+    {
+      "id": 4,
+      "citation_key": "ross2011dagger",
+      "title": "A Reduction of Imitation Learning and Structured Prediction to No-Regret Online Learning",
+      "authors": [
+        "Stephane Ross",
+        "Geoffrey Gordon",
+        "Drew Bagnell"
+      ],
+      "year": 2011,
+      "venue": "Proceedings of the Fourteenth International Conference on Artificial Intelligence and Statistics",
+      "series": "Proceedings of Machine Learning Research",
+      "volume": "15",
+      "pages": "627-635",
+      "doi": null,
+      "stable_url": "https://proceedings.mlr.press/v15/ross11a.html",
+      "verifiedURL": [
+        "https://proceedings.mlr.press/v15/ross11a.html",
+        "https://proceedings.mlr.press/v15/ross11a/ross11a.pdf"
+      ],
+      "verified_metadata": "按 PMLR 官方引用字段核对题名、3 位作者、2011、卷 15 与页码 627-635；作者原文另使用 J. Andrew Bagnell，书目按出版社统一格式 Drew Bagnell。",
+      "supports": "模仿学习中动作会影响后续观测分布，普通独立同分布监督学习假设受到破坏；DAgger 以交互数据聚合应对该问题。",
+      "project_limited_sentence": "行为克隆部署时可能进入示范分布之外的状态，因此本系统设置失败检测和恢复层；该设计动机与模仿学习的分布偏移问题相关。",
+      "does_not_support": "本系统没有在线专家查询和数据聚合训练，故不能称为实现 DAgger；规则恢复有效性也不能由 DAgger 理论直接推出。",
+      "bibliography_zh": "ROSS S, GORDON G, BAGNELL D. A Reduction of Imitation Learning and Structured Prediction to No-Regret Online Learning[C]//Proceedings of the Fourteenth International Conference on Artificial Intelligence and Statistics. PMLR, 2011, 15: 627-635."
+    },
+    {
+      "id": 5,
+      "citation_key": "bishop1994mdn",
+      "title": "Mixture Density Networks",
+      "authors": [
+        "Christopher M. Bishop"
+      ],
+      "year": 1994,
+      "venue": "Neural Computing Research Group Report",
+      "report_number": "NCRG/94/004",
+      "publisher": "Aston University",
+      "doi": null,
+      "stable_url": "https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/bishop-ncrg-94-004.pdf",
+      "verifiedURL": [
+        "https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/bishop-ncrg-94-004.pdf",
+        "https://www.microsoft.com/en-us/research/people/cmbishop/publications/"
+      ],
+      "verified_metadata": "作者任职机构托管原文的搜索索引摘录与作者发表列表确认题名、Christopher M. Bishop、1994 及报告号 NCRG/94/004；首页索引摘录标为 February 1994，并说明先前编号 NCRG/94/4288。直接 PDF 文本抽取存在字体编码问题，本次不声称逐页全文或可视核验。",
+      "supports": "混合密度网络以神经网络参数化条件混合分布，可描述连续输出中多种可能动作，而不仅是条件平均值。",
+      "project_limited_sentence": "本项目行为克隆策略使用高斯混合分布描述动作块，采用负对数似然训练；该概率建模属于既有 MDN 思路，项目改进不归于 MDN 本身。",
+      "does_not_support": "高斯混合策略的输出方差不能未经校准直接解释为可靠的模型认知不确定性或安全概率。",
+      "bibliography_zh": "BISHOP C M. Mixture Density Networks[R]. Birmingham: Aston University, 1994. NCRG/94/004."
+    },
+    {
+      "id": 6,
+      "citation_key": "ha2018worldmodels",
+      "title": "World Models",
+      "authors": [
+        "David Ha",
+        "Jürgen Schmidhuber"
+      ],
+      "year": 2018,
+      "venue": "arXiv preprint arXiv:1803.10122",
+      "doi": "10.48550/arXiv.1803.10122",
+      "stable_url": "https://arxiv.org/abs/1803.10122",
+      "verifiedURL": [
+        "https://arxiv.org/abs/1803.10122",
+        "https://worldmodels.github.io/"
+      ],
+      "verified_metadata": "arXiv 确认 2018-03-27 初投、2 位作者及 World Models 题名。作者交互站现推荐引用同年 NeurIPS 版本 Recurrent World Models Facilitate Policy Evolution；为避免两版本题名混用，此项明确引用 arXiv 预印本。",
+      "supports": "可学习环境的空间和时间表示及预测模型，并将模型提取的信息用于策略决策。",
+      "project_limited_sentence": "本文将世界模型限定为对低维机器人—物体状态与候选动作块之间关系进行学习的预测和评分模块；它不等同于从图像学习潜变量并在梦境中训练控制器的完整 World Models 系统。",
+      "does_not_support": "不能由此声称本项目实现了视觉世界模型、VAE、MDN-RNN 梦境训练或通用环境生成。",
+      "bibliography_zh": "HA D, SCHMIDHUBER J. World Models[EB/OL]. arXiv:1803.10122, 2018[2026-10-22]. https://arxiv.org/abs/1803.10122."
+    },
+    {
+      "id": 7,
+      "citation_key": "chua2018pets",
+      "title": "Deep Reinforcement Learning in a Handful of Trials using Probabilistic Dynamics Models",
+      "authors": [
+        "Kurtland Chua",
+        "Roberto Calandra",
+        "Rowan McAllister",
+        "Sergey Levine"
+      ],
+      "year": 2018,
+      "venue": "Advances in Neural Information Processing Systems",
+      "volume": "31",
+      "doi": null,
+      "stable_url": "https://proceedings.nips.cc/paper_files/paper/2018/hash/3de568f8597b94bda53149c7d7f5958c-Abstract.html",
+      "verifiedURL": [
+        "https://proceedings.nips.cc/paper_files/paper/2018/hash/3de568f8597b94bda53149c7d7f5958c-Abstract.html",
+        "https://papers.nips.cc/paper/2018/file/3de568f8597b94bda53149c7d7f5958c-Paper.pdf"
+      ],
+      "verified_metadata": "NeurIPS 官方条目核对题名、4 位作者、2018、卷 31，摘要确认 probabilistic ensembles with trajectory sampling (PETS)。不填未经需要的出版页码。",
+      "supports": "学习到的概率动力学模型可与采样式预测结合，用于考虑模型不确定性的决策。",
+      "project_limited_sentence": "PETS 提供预测模型辅助决策的概念参照；本项目采用固定行为克隆候选动作与世界模型门控，不执行 PETS 的在线模型式强化学习算法。",
+      "does_not_support": "本项目的 3 个固定训练种子用于重复评估，不能称为 PETS 概率模型集成；状态预测误差不等于已校准的不确定性。",
+      "bibliography_zh": "CHUA K, CALANDRA R, MCALLISTER R, et al. Deep Reinforcement Learning in a Handful of Trials using Probabilistic Dynamics Models[C]//Advances in Neural Information Processing Systems. 2018, 31."
+    },
+    {
+      "id": 8,
+      "citation_key": "rawlings2017mpc",
+      "title": "Model Predictive Control: Theory, Computation, and Design",
+      "authors": [
+        "James B. Rawlings",
+        "David Q. Mayne",
+        "Moritz M. Diehl"
+      ],
+      "year": 2017,
+      "edition": "2nd edition, first printing",
+      "venue": "Monograph",
+      "publisher": "Nob Hill Publishing",
+      "publication_place": "Madison, Wisconsin",
+      "isbn": "9780975937730",
+      "doi": null,
+      "stable_url": "https://sites.engineering.ucsb.edu/~jbraw/mpc/MPC-book-2nd-edition-1st-printing.pdf",
+      "verifiedURL": [
+        "https://sites.engineering.ucsb.edu/~jbraw/mpc/",
+        "https://sites.engineering.ucsb.edu/~jbraw/mpc/MPC-book-2nd-edition-1st-printing.pdf"
+      ],
+      "verified_metadata": "作者大学站点的第二版首次印刷 PDF 题名页、版权页核对 3 位作者、Nob Hill Publishing、2017、October 2017 first printing 和 ISBN；官网首页现显示更新印刷版权 2026，本文固定引用 2017 版，不混用其年份。",
+      "supports": "MPC 在有限时域中根据模型优化控制决策，并在后续时刻更新反馈；闭环可行性、稳定性需要额外条件。",
+      "project_limited_sentence": "本系统的候选动作块评估与滚动决策可用有限时域预测解释，但实现是有限候选比较加规则恢复；不把它表述为已求解完整连续优化 MPC 或已证明闭环稳定。",
+      "does_not_support": "不能仅因使用预测与动作块就声称具备 MPC 的递归可行性、最优性或稳定性保证。",
+      "bibliography_zh": "RAWLINGS J B, MAYNE D Q, DIEHL M M. Model Predictive Control: Theory, Computation, and Design[M]. 2nd ed. Madison: Nob Hill Publishing, 2017."
+    },
+    {
+      "id": 9,
+      "citation_key": "robosuitecontrollers",
+      "title": "Controllers — robosuite 1.5 documentation",
+      "authors": [
+        "robosuite core team"
+      ],
+      "year": null,
+      "venue": "Official software documentation",
+      "version_label_on_page": "1.5",
+      "doi": null,
+      "stable_url": "https://robosuite.ai/docs/modules/controllers.html",
+      "verifiedURL": [
+        "https://robosuite.ai/docs/modules/controllers.html"
+      ],
+      "verified_metadata": "官方文档确认 OSC_POSE 固定阻抗输入为不含夹爪的 6 维位姿，增量姿态采用轴角；策略频率和底层仿真频率区别；输入/输出缩放区间的含义。文档无明确发表年，按访问日期引用，不把页面版权年当发表年。",
+      "supports": "解释 6 维末端位姿控制、夹爪分量、归一化控制输入缩放和多仿真步执行一次策略参考值的工程语义。",
+      "project_limited_sentence": "本项目以当前运行配置约束 OSC_POSE 动作维度及缩放，并将额外夹爪命令组成动作向量；D=2 表示两步命令 FIFO，在固定 20 Hz 策略频率下对应名义 0.10 s 命令延迟，实测推理耗时须另外统计。",
+      "does_not_support": "官方当前默认配置不能替代本项目历史模型和实验锁文件中的实际控制参数，也不能把归一化位置增量直接当作 m/s 速度。",
+      "bibliography_zh": "ROBOSUITE CORE TEAM. Controllers — robosuite 1.5 documentation[EB/OL]. [2026-10-22]. https://robosuite.ai/docs/modules/controllers.html."
+    },
+    {
+      "id": 10,
+      "citation_key": "robomimicdatasets",
+      "title": "Overview — robomimic datasets documentation",
+      "authors": [
+        "robomimic project"
+      ],
+      "year": null,
+      "venue": "Official software documentation",
+      "version_label_on_page": "0.5",
+      "doi": null,
+      "stable_url": "https://robomimic.github.io/docs/datasets/overview.html",
+      "verifiedURL": [
+        "https://robomimic.github.io/docs/datasets/overview.html"
+      ],
+      "verified_metadata": "官方数据文档核对 HDF5 的 data/demo、obs/actions/states、mask/filter keys 组织，以及动作归一化到 [-1,1] 和训练/验证轨迹划分的说明。页面为当前 0.5 文档，非项目安装版本证明；无独立发表年。",
+      "supports": "用 HDF5 分轨迹保存观测、动作、仿真状态与数据划分，并使用轨迹键组织训练和验证集合。",
+      "project_limited_sentence": "本项目沿用 robomimic 风格的轨迹存储与过滤键，训练和开发仅读取既定集合；独立确认起点另外生成并锁定，避免将逐帧随机拆分误当独立轨迹划分。",
+      "does_not_support": "文档结构兼容不保证数据语义正确，当前时刻相对位姿仍须由本项目进行同步检查；独立起点数不能按控制帧数或模型种子执行次数扩充。",
+      "bibliography_zh": "ROBOMIMIC PROJECT. Overview — robomimic datasets documentation[EB/OL]. [2026-10-22]. https://robomimic.github.io/docs/datasets/overview.html."
+    }
+  ]
+}

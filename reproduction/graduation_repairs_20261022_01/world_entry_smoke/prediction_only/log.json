@@ -1,0 +1,38 @@
+[
+  {
+    "step": 1,
+    "loss": 0.07257438451051712,
+    "prediction_loss": 0.07257438451051712,
+    "progress_loss": 0.0,
+    "risk_loss": 0.0,
+    "ranking_loss": 0.0,
+    "selection_criterion": 0.13967988802039105,
+    "elapsed_s": 0.1545338000000811,
+    "mean_regret": null,
+    "strict_reversal_rate": null,
+    "tie_rate": null,
+    "pair_error_half_ties": null,
+    "effective_pairs": 0,
+    "groups": 64,
+    "ranking_note": "Not evaluated: prediction_only has no trained score head",
+    "normalized_state_mse": 0.13967988802039105
+  },
+  {
+    "step": 2,
+    "loss": 0.08087201416492462,
+    "prediction_loss": 0.08087201416492462,
+    "progress_loss": 0.0,
+    "risk_loss": 0.0,
+    "ranking_loss": 0.0,
+    "selection_criterion": 0.13959383964538574,
+    "elapsed_s": 0.16031370000018796,
+    "mean_regret": null,
+    "strict_reversal_rate": null,
+    "tie_rate": null,
+    "pair_error_half_ties": null,
+    "effective_pairs": 0,
+    "groups": 64,
+    "ranking_note": "Not evaluated: prediction_only has no trained score head",
+    "normalized_state_mse": 0.13959383964538574
+  }
+]

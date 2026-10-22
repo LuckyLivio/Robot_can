@@ -1,0 +1,41 @@
+{
+  "passed": true,
+  "finished_utc": "2026-10-22T01:47:30.529600+00:00",
+  "source_unchanged": true,
+  "episodes": 240,
+  "jobs": [
+    {
+      "id": "v5_bc_0.05",
+      "returncode": 0
+    },
+    {
+      "id": "v5_bc_0",
+      "returncode": 0
+    },
+    {
+      "id": "v5_full_0.05",
+      "returncode": 0
+    },
+    {
+      "id": "v5_full_0",
+      "returncode": 0
+    },
+    {
+      "id": "queue_budget_bc_0",
+      "returncode": 0
+    },
+    {
+      "id": "queue_budget_bc_0.05",
+      "returncode": 0
+    },
+    {
+      "id": "queue_budget_full_0.05",
+      "returncode": 0
+    },
+    {
+      "id": "queue_budget_full_0",
+      "returncode": 0
+    }
+  ],
+  "elapsed_s": 232.18361779999987
+}

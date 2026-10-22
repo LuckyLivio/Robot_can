@@ -1,0 +1,161 @@
+{
+  "date_local": "2026-10-22",
+  "python": "3.10.9 (tags/v3.10.9:1dd9be6, Dec  6 2022, 20:01:21) [MSC v.1934 64 bit (AMD64)]",
+  "packages": {
+    "torch": "2.14.1+cu130",
+    "numpy": "1.26.4",
+    "robosuite": "1.5.1",
+    "mujoco": "3.3.0",
+    "h5py": "3.11.0",
+    "scipy": "1.15.3"
+  },
+  "syntax": {
+    "tracked_python_files": 1352,
+    "failures": []
+  },
+  "splits": {
+    "sizes": {
+      "train": 140,
+      "dev": 30,
+      "sealed_test": 30
+    },
+    "duplicates": {
+      "train": 0,
+      "dev": 0,
+      "sealed_test": 0
+    },
+    "overlaps": {
+      "train/dev": [],
+      "train/sealed_test": [],
+      "dev/sealed_test": []
+    },
+    "missing_demos": []
+  },
+  "dataset": {
+    "sha256": "3f2eb92e0a5025d0095e866ac16cc8092d6a762abe27dec90dbaff9027282962",
+    "manifest_matches": true
+  },
+  "model_inference": {
+    "bc_shape": [
+      1,
+      8,
+      7
+    ],
+    "bc_finite": true,
+    "world_models": [
+      {
+        "path": "models/multiseed_20261012_01_full_s17/model.pt",
+        "states_shape": [
+          1,
+          8,
+          23
+        ],
+        "scores_shape": [
+          1,
+          8,
+          2
+        ],
+        "finite": true
+      },
+      {
+        "path": "models/multiseed_20261012_01_full_s23/model.pt",
+        "states_shape": [
+          1,
+          8,
+          23
+        ],
+        "scores_shape": [
+          1,
+          8,
+          2
+        ],
+        "finite": true
+      },
+      {
+        "path": "models/multiseed_20261012_01_full_s41/model.pt",
+        "states_shape": [
+          1,
+          8,
+          23
+        ],
+        "scores_shape": [
+          1,
+          8,
+          2
+        ],
+        "finite": true
+      },
+      {
+        "path": "models/multiseed_20261012_01_plain_s17/model.pt",
+        "states_shape": [
+          1,
+          8,
+          23
+        ],
+        "scores_shape": [
+          1,
+          8,
+          2
+        ],
+        "finite": true
+      },
+      {
+        "path": "models/multiseed_20261012_01_plain_s23/model.pt",
+        "states_shape": [
+          1,
+          8,
+          23
+        ],
+        "scores_shape": [
+          1,
+          8,
+          2
+        ],
+        "finite": true
+      },
+      {
+        "path": "models/multiseed_20261012_01_plain_s41/model.pt",
+        "states_shape": [
+          1,
+          8,
+          23
+        ],
+        "scores_shape": [
+          1,
+          8,
+          2
+        ],
+        "finite": true
+      }
+    ],
+    "scope": "One saved observation, CPU forward only; not closed-loop performance."
+  },
+  "v21_registered_job_contracts_steps_horizon_delay": [
+    [
+      400,
+      400,
+      2
+    ]
+  ],
+  "v21_registered_episodes": 54,
+  "rank_metric_tie_probe": {
+    "predictions": [
+      0,
+      0
+    ],
+    "targets": [
+      0,
+      1
+    ],
+    "actual": {
+      "mean_regret": 1.0,
+      "wrong_pair_rate": 0.0,
+      "optimal_within_025": 0.0,
+      "groups": 1,
+      "nontrivial_pairs": 1
+    },
+    "interpretation": "wrong_pair_rate counts strict reversals only; a tied prediction has zero reversal rate despite regret=1. Add a tie metric before interpreting this as ranking accuracy."
+  },
+  "scope": "Static syntax, split identities, data hash, seven model forwards and saved job configurations. No training, new evaluation episodes, or target-device reproduction.",
+  "passed": true
+}

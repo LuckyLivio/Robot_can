@@ -1,0 +1,1941 @@
+{
+  "status": "complete",
+  "job": {
+    "id": "v5_bc_0.05",
+    "method": "bc",
+    "seed": null,
+    "noise": 0.05,
+    "controller": "v5",
+    "semantics": "legacy",
+    "demos": [
+      "demo_105",
+      "demo_118",
+      "demo_62",
+      "demo_174",
+      "demo_124",
+      "demo_28",
+      "demo_0",
+      "demo_49",
+      "demo_73",
+      "demo_128",
+      "demo_173",
+      "demo_32",
+      "demo_26",
+      "demo_85",
+      "demo_21",
+      "demo_195",
+      "demo_150",
+      "demo_188",
+      "demo_97",
+      "demo_87",
+      "demo_7",
+      "demo_90",
+      "demo_111",
+      "demo_120",
+      "demo_22",
+      "demo_156",
+      "demo_185",
+      "demo_110",
+      "demo_179",
+      "demo_43"
+    ],
+    "steps": 400,
+    "delay": 2
+  },
+  "records": [
+    {
+      "demo": "demo_105",
+      "success": true,
+      "steps": 314,
+      "intervention_steps": 235,
+      "attempts": 1,
+      "verified_regrasps": 1,
+      "failed_attempts": 0,
+      "events": [
+        {
+          "step": 80,
+          "from": "NORMAL",
+          "to": "RETRACT",
+          "reason": "near_object_stall",
+          "attempt": 1,
+          "object_position": [
+            0.2003287822008133,
+            -0.4155421257019043,
+            0.8601547479629517
+          ]
+        },
+        {
+          "step": 90,
+          "from": "RETRACT",
+          "to": "ALIGN",
+          "reason": "retracted",
+          "attempt": 1,
+          "object_position": [
+            0.2004428505897522,
+            -0.4157854914665222,
+            0.8600655198097229
+          ]
+        },
+        {
+          "step": 116,
+          "from": "ALIGN",
+          "to": "DESCEND",
+          "reason": "aligned_above_object",
+          "attempt": 1,
+          "object_position": [
+            0.20041851699352264,
+            -0.4157947599887848,
+            0.8600685596466064
+          ]
+        },
+        {
+          "step": 137,
+          "from": "DESCEND",
+          "to": "CLOSE",
+          "reason": "at_grasp_pose",
+          "attempt": 1,
+          "object_position": [
+            0.20042003691196442,
+            -0.41569215059280396,
+            0.8600670099258423
+          ]
+        },
+        {
+          "step": 155,
+          "from": "CLOSE",
+          "to": "TEST_LIFT",
+          "reason": "close_commands_executed",
+          "attempt": 1,
+          "object_position": [
+            0.2030542641878128,
+            -0.4163896143436432,
+            0.860097348690033
+          ]
+        },
+        {
+          "step": 162,
+          "from": "TEST_LIFT",
+          "to": "LIFT",
+          "reason": "lift_follow_confirmed",
+          "attempt": 1,
+          "object_position": [
+            0.20495641231536865,
+            -0.4167451560497284,
+            0.8893039226531982
+          ]
+        },
+        {
+          "step": 183,
+          "from": "LIFT",
+          "to": "CARRY",
+          "reason": "clearance_reached",
+          "attempt": 1,
+          "object_position": [
+            0.20737583935260773,
+            -0.4217975437641144,
+            1.06712007522583
+          ]
+        },
+        {
+          "step": 277,
+          "from": "CARRY",
+          "to": "PLACE",
+          "reason": "above_target",
+          "attempt": 1,
+          "object_position": [
+            0.17863066494464874,
+            0.36304450035095215,
+            1.0597554445266724
+          ]
+        },
+        {
+          "step": 294,
+          "from": "PLACE",
+          "to": "RELEASE",
+          "reason": "at_release_height",
+          "attempt": 1,
+          "object_position": [
+            0.16449250280857086,
+            0.3821040689945221,
+            0.8906559348106384
+          ]
+        },
+        {
+          "step": 310,
+          "from": "RELEASE",
+          "to": "RETREAT",
+          "reason": "release_commands_executed",
+          "attempt": 1,
+          "object_position": [
+            0.1613762378692627,
+            0.37695640325546265,
+            0.8600552082061768
+          ]
+        }
+      ],
+      "phases": {
+        "NORMAL": 79,
+        "RETRACT": 11,
+        "ALIGN": 26,
+        "DESCEND": 21,
+        "CLOSE": 18,
+        "TEST_LIFT": 7,
+        "LIFT": 21,
+        "CARRY": 94,
+        "PLACE": 17,
+        "RELEASE": 16,
+        "RETREAT": 4
+      },
+      "selection_counts": {
+        "2": 314
+      },
+      "compute_timing": {
+        "n": 314,
+        "p50_ms": 0.5988500000739805,
+        "p95_ms": 0.9374900000693731,
+        "p99_ms": 1.4386420000596445,
+        "max_ms": 2.202099999976781,
+        "over_50ms": 0,
+        "over_50ms_fraction": 0.0
+      },
+      "stability": {
+        "observed": true,
+        "diagnostic_controls": 20,
+        "all_in_goal": true,
+        "last10_max_speed_m_s": 0.0008488660387229174,
+        "stable": true,
+        "scope": "Post-termination open-gripper diagnostic; excluded from benchmark steps and success denominator."
+      },
+      "benchmark_elapsed_s": 2.4940162999998847
+    },
+    {
+      "demo": "demo_118",
+      "success": true,
+      "steps": 84,
+      "intervention_steps": 0,
+      "attempts": 0,
+      "verified_regrasps": 0,
+      "failed_attempts": 0,
+      "events": [],
+      "phases": {
+        "NORMAL": 84
+      },
+      "selection_counts": {
+        "2": 84
+      },
+      "compute_timing": {
+        "n": 84,
+        "p50_ms": 0.41030000011232914,
+        "p95_ms": 0.5955850000532336,
+        "p99_ms": 0.7414100000937658,
+        "max_ms": 1.0592999999516906,
+        "over_50ms": 0,
+        "over_50ms_fraction": 0.0
+      },
+      "stability": {
+        "observed": true,
+        "diagnostic_controls": 20,
+        "all_in_goal": true,
+        "last10_max_speed_m_s": 0.004816747095901519,
+        "stable": true,
+        "scope": "Post-termination open-gripper diagnostic; excluded from benchmark steps and success denominator."
+      },
+      "benchmark_elapsed_s": 0.5997188999999707
+    },
+    {
+      "demo": "demo_62",
+      "success": true,
+      "steps": 121,
+      "intervention_steps": 0,
+      "attempts": 0,
+      "verified_regrasps": 0,
+      "failed_attempts": 0,
+      "events": [],
+      "phases": {
+        "NORMAL": 121
+      },
+      "selection_counts": {
+        "2": 121
+      },
+      "compute_timing": {
+        "n": 121,
+        "p50_ms": 0.44809999985773175,
+        "p95_ms": 0.6308999998054787,
+        "p99_ms": 1.1186999999154064,
+        "max_ms": 1.3760000001639128,
+        "over_50ms": 0,
+        "over_50ms_fraction": 0.0
+      },
+      "stability": {
+        "observed": true,
+        "diagnostic_controls": 20,
+        "all_in_goal": true,
+        "last10_max_speed_m_s": 0.003919537120964378,
+        "stable": true,
+        "scope": "Post-termination open-gripper diagnostic; excluded from benchmark steps and success denominator."
+      },
+      "benchmark_elapsed_s": 0.9136273999999958
+    },
+    {
+      "demo": "demo_174",
+      "success": true,
+      "steps": 145,
+      "intervention_steps": 0,
+      "attempts": 0,
+      "verified_regrasps": 0,
+      "failed_attempts": 0,
+      "events": [],
+      "phases": {
+        "NORMAL": 145
+      },
+      "selection_counts": {
+        "2": 145
+      },
+      "compute_timing": {
+        "n": 145,
+        "p50_ms": 0.45870000008108036,
+        "p95_ms": 0.659219999988636,
+        "p99_ms": 0.9959719999824308,
+        "max_ms": 1.4940999999453197,
+        "over_50ms": 0,
+        "over_50ms_fraction": 0.0
+      },
+      "stability": {
+        "observed": true,
+        "diagnostic_controls": 20,
+        "all_in_goal": true,
+        "last10_max_speed_m_s": 0.0010467739775776863,
+        "stable": true,
+        "scope": "Post-termination open-gripper diagnostic; excluded from benchmark steps and success denominator."
+      },
+      "benchmark_elapsed_s": 1.097387900000058
+    },
+    {
+      "demo": "demo_124",
+      "success": true,
+      "steps": 376,
+      "intervention_steps": 296,
+      "attempts": 2,
+      "verified_regrasps": 1,
+      "failed_attempts": 1,
+      "events": [
+        {
+          "step": 81,
+          "from": "NORMAL",
+          "to": "RETRACT",
+          "reason": "near_object_stall",
+          "attempt": 1,
+          "object_position": [
+            0.01594998687505722,
+            -0.3252476155757904,
+            0.8659912347793579
+          ]
+        },
+        {
+          "step": 93,
+          "from": "RETRACT",
+          "to": "ALIGN",
+          "reason": "retracted",
+          "attempt": 1,
+          "object_position": [
+            0.026547910645604134,
+            -0.2868378460407257,
+            0.8436472415924072
+          ]
+        },
+        {
+          "step": 109,
+          "from": "ALIGN",
+          "to": "DESCEND",
+          "reason": "aligned_above_object",
+          "attempt": 1,
+          "object_position": [
+            0.026532137766480446,
+            -0.2868468761444092,
+            0.8436422944068909
+          ]
+        },
+        {
+          "step": 148,
+          "from": "DESCEND",
+          "to": "RETRACT",
+          "reason": "descent_stalled_preserve_budget",
+          "attempt": 2,
+          "object_position": [
+            0.03354167938232422,
+            -0.29121270775794983,
+            0.8427764773368835
+          ]
+        },
+        {
+          "step": 163,
+          "from": "RETRACT",
+          "to": "ALIGN",
+          "reason": "retracted",
+          "attempt": 2,
+          "object_position": [
+            0.03463677316904068,
+            -0.29031550884246826,
+            0.8436331748962402
+          ]
+        },
+        {
+          "step": 201,
+          "from": "ALIGN",
+          "to": "DESCEND",
+          "reason": "aligned_above_object",
+          "attempt": 2,
+          "object_position": [
+            0.034623775631189346,
+            -0.29032158851623535,
+            0.8436394333839417
+          ]
+        },
+        {
+          "step": 223,
+          "from": "DESCEND",
+          "to": "CLOSE",
+          "reason": "at_grasp_pose",
+          "attempt": 2,
+          "object_position": [
+            0.03462351858615875,
+            -0.2902994155883789,
+            0.8436322808265686
+          ]
+        },
+        {
+          "step": 241,
+          "from": "CLOSE",
+          "to": "TEST_LIFT",
+          "reason": "close_commands_executed",
+          "attempt": 2,
+          "object_position": [
+            0.033212680369615555,
+            -0.28900817036628723,
+            0.8510540723800659
+          ]
+        },
+        {
+          "step": 248,
+          "from": "TEST_LIFT",
+          "to": "LIFT",
+          "reason": "lift_follow_confirmed",
+          "attempt": 2,
+          "object_position": [
+            0.03264942765235901,
+            -0.2851088047027588,
+            0.8779065012931824
+          ]
+        },
+        {
+          "step": 268,
+          "from": "LIFT",
+          "to": "CARRY",
+          "reason": "clearance_reached",
+          "attempt": 2,
+          "object_position": [
+            0.02768760547041893,
+            -0.28436821699142456,
+            1.064591407775879
+          ]
+        },
+        {
+          "step": 347,
+          "from": "CARRY",
+          "to": "PLACE",
+          "reason": "above_target",
+          "attempt": 2,
+          "object_position": [
+            0.17761793732643127,
+            0.36538174748420715,
+            1.0666522979736328
+          ]
+        },
+        {
+          "step": 365,
+          "from": "PLACE",
+          "to": "RELEASE",
+          "reason": "at_release_height",
+          "attempt": 2,
+          "object_position": [
+            0.1643395572900772,
+            0.3845406472682953,
+            0.8979411125183105
+          ]
+        }
+      ],
+      "phases": {
+        "NORMAL": 80,
+        "RETRACT": 29,
+        "ALIGN": 54,
+        "DESCEND": 60,
+        "CLOSE": 18,
+        "TEST_LIFT": 7,
+        "LIFT": 20,
+        "CARRY": 79,
+        "PLACE": 18,
+        "RELEASE": 11
+      },
+      "selection_counts": {
+        "2": 376
+      },
+      "compute_timing": {
+        "n": 376,
+        "p50_ms": 0.6023000000823231,
+        "p95_ms": 0.9265500001447435,
+        "p99_ms": 1.3448249999328254,
+        "max_ms": 6.093499999906271,
+        "over_50ms": 0,
+        "over_50ms_fraction": 0.0
+      },
+      "stability": {
+        "observed": true,
+        "diagnostic_controls": 20,
+        "all_in_goal": true,
+        "last10_max_speed_m_s": 0.0009720048547023907,
+        "stable": true,
+        "scope": "Post-termination open-gripper diagnostic; excluded from benchmark steps and success denominator."
+      },
+      "benchmark_elapsed_s": 2.9075419000000693
+    },
+    {
+      "demo": "demo_28",
+      "success": true,
+      "steps": 123,
+      "intervention_steps": 0,
+      "attempts": 0,
+      "verified_regrasps": 0,
+      "failed_attempts": 0,
+      "events": [],
+      "phases": {
+        "NORMAL": 123
+      },
+      "selection_counts": {
+        "2": 123
+      },
+      "compute_timing": {
+        "n": 123,
+        "p50_ms": 0.4585000001497974,
+        "p95_ms": 0.6324899999754051,
+        "p99_ms": 0.7915060000777885,
+        "max_ms": 1.2143000001287874,
+        "over_50ms": 0,
+        "over_50ms_fraction": 0.0
+      },
+      "stability": {
+        "observed": true,
+        "diagnostic_controls": 20,
+        "all_in_goal": true,
+        "last10_max_speed_m_s": 0.0050669972551986575,
+        "stable": true,
+        "scope": "Post-termination open-gripper diagnostic; excluded from benchmark steps and success denominator."
+      },
+      "benchmark_elapsed_s": 0.9308574000001499
+    },
+    {
+      "demo": "demo_0",
+      "success": true,
+      "steps": 104,
+      "intervention_steps": 0,
+      "attempts": 0,
+      "verified_regrasps": 0,
+      "failed_attempts": 0,
+      "events": [],
+      "phases": {
+        "NORMAL": 104
+      },
+      "selection_counts": {
+        "2": 104
+      },
+      "compute_timing": {
+        "n": 104,
+        "p50_ms": 0.4552000000330736,
+        "p95_ms": 0.6290850000368663,
+        "p99_ms": 1.3502169998696445,
+        "max_ms": 2.219100000047547,
+        "over_50ms": 0,
+        "over_50ms_fraction": 0.0
+      },
+      "stability": {
+        "observed": true,
+        "diagnostic_controls": 20,
+        "all_in_goal": true,
+        "last10_max_speed_m_s": 0.006235220935195684,
+        "stable": true,
+        "scope": "Post-termination open-gripper diagnostic; excluded from benchmark steps and success denominator."
+      },
+      "benchmark_elapsed_s": 0.8120372000000771
+    },
+    {
+      "demo": "demo_49",
+      "success": true,
+      "steps": 105,
+      "intervention_steps": 0,
+      "attempts": 0,
+      "verified_regrasps": 0,
+      "failed_attempts": 0,
+      "events": [],
+      "phases": {
+        "NORMAL": 105
+      },
+      "selection_counts": {
+        "2": 105
+      },
+      "compute_timing": {
+        "n": 105,
+        "p50_ms": 0.4595000000335858,
+        "p95_ms": 0.5920600000081322,
+        "p99_ms": 0.8383160001812928,
+        "max_ms": 1.0346999999910622,
+        "over_50ms": 0,
+        "over_50ms_fraction": 0.0
+      },
+      "stability": {
+        "observed": true,
+        "diagnostic_controls": 20,
+        "all_in_goal": true,
+        "last10_max_speed_m_s": 0.0045726445387117565,
+        "stable": true,
+        "scope": "Post-termination open-gripper diagnostic; excluded from benchmark steps and success denominator."
+      },
+      "benchmark_elapsed_s": 0.8385788000000503
+    },
+    {
+      "demo": "demo_73",
+      "success": true,
+      "steps": 351,
+      "intervention_steps": 245,
+      "attempts": 1,
+      "verified_regrasps": 1,
+      "failed_attempts": 0,
+      "events": [
+        {
+          "step": 107,
+          "from": "NORMAL",
+          "to": "RETRACT",
+          "reason": "early_stall_preserve_budget",
+          "attempt": 1,
+          "object_position": [
+            0.21674393117427826,
+            -0.3761776089668274,
+            0.8600450158119202
+          ]
+        },
+        {
+          "step": 115,
+          "from": "RETRACT",
+          "to": "ALIGN",
+          "reason": "retracted",
+          "attempt": 1,
+          "object_position": [
+            0.21673108637332916,
+            -0.37615981698036194,
+            0.8600624203681946
+          ]
+        },
+        {
+          "step": 157,
+          "from": "ALIGN",
+          "to": "DESCEND",
+          "reason": "aligned_above_object",
+          "attempt": 1,
+          "object_position": [
+            0.21673083305358887,
+            -0.3762010633945465,
+            0.8600526452064514
+          ]
+        },
+        {
+          "step": 179,
+          "from": "DESCEND",
+          "to": "CLOSE",
+          "reason": "at_grasp_pose",
+          "attempt": 1,
+          "object_position": [
+            0.2183545082807541,
+            -0.3768143057823181,
+            0.8594453930854797
+          ]
+        },
+        {
+          "step": 197,
+          "from": "CLOSE",
+          "to": "TEST_LIFT",
+          "reason": "close_commands_executed",
+          "attempt": 1,
+          "object_position": [
+            0.23152871429920197,
+            -0.3796473741531372,
+            0.8707002997398376
+          ]
+        },
+        {
+          "step": 204,
+          "from": "TEST_LIFT",
+          "to": "LIFT",
+          "reason": "lift_follow_confirmed",
+          "attempt": 1,
+          "object_position": [
+            0.2387312650680542,
+            -0.38206008076667786,
+            0.8986607193946838
+          ]
+        },
+        {
+          "step": 223,
+          "from": "LIFT",
+          "to": "CARRY",
+          "reason": "clearance_reached",
+          "attempt": 1,
+          "object_position": [
+            0.2453242391347885,
+            -0.3876698613166809,
+            1.0678074359893799
+          ]
+        },
+        {
+          "step": 313,
+          "from": "CARRY",
+          "to": "PLACE",
+          "reason": "above_target",
+          "attempt": 1,
+          "object_position": [
+            0.1848597675561905,
+            0.363346129655838,
+            1.0596141815185547
+          ]
+        },
+        {
+          "step": 330,
+          "from": "PLACE",
+          "to": "RELEASE",
+          "reason": "at_release_height",
+          "attempt": 1,
+          "object_position": [
+            0.1687733381986618,
+            0.38167890906333923,
+            0.8930244445800781
+          ]
+        },
+        {
+          "step": 346,
+          "from": "RELEASE",
+          "to": "RETREAT",
+          "reason": "release_commands_executed",
+          "attempt": 1,
+          "object_position": [
+            0.15514962375164032,
+            0.37717899680137634,
+            0.8600553274154663
+          ]
+        }
+      ],
+      "phases": {
+        "NORMAL": 106,
+        "RETRACT": 9,
+        "ALIGN": 42,
+        "DESCEND": 22,
+        "CLOSE": 18,
+        "TEST_LIFT": 7,
+        "LIFT": 19,
+        "CARRY": 90,
+        "PLACE": 17,
+        "RELEASE": 16,
+        "RETREAT": 5
+      },
+      "selection_counts": {
+        "2": 351
+      },
+      "compute_timing": {
+        "n": 351,
+        "p50_ms": 0.6253000001379405,
+        "p95_ms": 0.9747999998808154,
+        "p99_ms": 1.3284499999599575,
+        "max_ms": 2.546199999869714,
+        "over_50ms": 0,
+        "over_50ms_fraction": 0.0
+      },
+      "stability": {
+        "observed": true,
+        "diagnostic_controls": 20,
+        "all_in_goal": true,
+        "last10_max_speed_m_s": 0.0008258403977379203,
+        "stable": true,
+        "scope": "Post-termination open-gripper diagnostic; excluded from benchmark steps and success denominator."
+      },
+      "benchmark_elapsed_s": 2.7614456000001155
+    },
+    {
+      "demo": "demo_128",
+      "success": true,
+      "steps": 100,
+      "intervention_steps": 0,
+      "attempts": 0,
+      "verified_regrasps": 0,
+      "failed_attempts": 0,
+      "events": [],
+      "phases": {
+        "NORMAL": 100
+      },
+      "selection_counts": {
+        "2": 100
+      },
+      "compute_timing": {
+        "n": 100,
+        "p50_ms": 0.48110000000178843,
+        "p95_ms": 0.7430449999674237,
+        "p99_ms": 0.8985929998311909,
+        "max_ms": 2.9372999999850435,
+        "over_50ms": 0,
+        "over_50ms_fraction": 0.0
+      },
+      "stability": {
+        "observed": true,
+        "diagnostic_controls": 20,
+        "all_in_goal": true,
+        "last10_max_speed_m_s": 0.027626880910247564,
+        "stable": false,
+        "scope": "Post-termination open-gripper diagnostic; excluded from benchmark steps and success denominator."
+      },
+      "benchmark_elapsed_s": 0.7412371000000348
+    },
+    {
+      "demo": "demo_173",
+      "success": true,
+      "steps": 129,
+      "intervention_steps": 0,
+      "attempts": 0,
+      "verified_regrasps": 0,
+      "failed_attempts": 0,
+      "events": [],
+      "phases": {
+        "NORMAL": 129
+      },
+      "selection_counts": {
+        "2": 129
+      },
+      "compute_timing": {
+        "n": 129,
+        "p50_ms": 0.46390000011342636,
+        "p95_ms": 0.6630399999266955,
+        "p99_ms": 1.0721879999437076,
+        "max_ms": 2.704300000004878,
+        "over_50ms": 0,
+        "over_50ms_fraction": 0.0
+      },
+      "stability": {
+        "observed": true,
+        "diagnostic_controls": 20,
+        "all_in_goal": true,
+        "last10_max_speed_m_s": 0.005169273936189711,
+        "stable": true,
+        "scope": "Post-termination open-gripper diagnostic; excluded from benchmark steps and success denominator."
+      },
+      "benchmark_elapsed_s": 1.0138590999999906
+    },
+    {
+      "demo": "demo_32",
+      "success": true,
+      "steps": 108,
+      "intervention_steps": 0,
+      "attempts": 0,
+      "verified_regrasps": 0,
+      "failed_attempts": 0,
+      "events": [],
+      "phases": {
+        "NORMAL": 108
+      },
+      "selection_counts": {
+        "2": 108
+      },
+      "compute_timing": {
+        "n": 108,
+        "p50_ms": 0.5115999999816268,
+        "p95_ms": 0.7979100000852667,
+        "p99_ms": 1.1987229998703681,
+        "max_ms": 1.4704000000165252,
+        "over_50ms": 0,
+        "over_50ms_fraction": 0.0
+      },
+      "stability": {
+        "observed": true,
+        "diagnostic_controls": 20,
+        "all_in_goal": true,
+        "last10_max_speed_m_s": 0.004696573887486011,
+        "stable": true,
+        "scope": "Post-termination open-gripper diagnostic; excluded from benchmark steps and success denominator."
+      },
+      "benchmark_elapsed_s": 0.8569876999999906
+    },
+    {
+      "demo": "demo_26",
+      "success": true,
+      "steps": 116,
+      "intervention_steps": 0,
+      "attempts": 0,
+      "verified_regrasps": 0,
+      "failed_attempts": 0,
+      "events": [],
+      "phases": {
+        "NORMAL": 116
+      },
+      "selection_counts": {
+        "2": 116
+      },
+      "compute_timing": {
+        "n": 116,
+        "p50_ms": 0.576550000005227,
+        "p95_ms": 0.9944749999704072,
+        "p99_ms": 2.7629249999677006,
+        "max_ms": 10.321400000066205,
+        "over_50ms": 0,
+        "over_50ms_fraction": 0.0
+      },
+      "stability": {
+        "observed": true,
+        "diagnostic_controls": 20,
+        "all_in_goal": true,
+        "last10_max_speed_m_s": 0.018970186356455088,
+        "stable": true,
+        "scope": "Post-termination open-gripper diagnostic; excluded from benchmark steps and success denominator."
+      },
+      "benchmark_elapsed_s": 1.012105799999972
+    },
+    {
+      "demo": "demo_85",
+      "success": true,
+      "steps": 123,
+      "intervention_steps": 0,
+      "attempts": 0,
+      "verified_regrasps": 0,
+      "failed_attempts": 0,
+      "events": [],
+      "phases": {
+        "NORMAL": 123
+      },
+      "selection_counts": {
+        "2": 123
+      },
+      "compute_timing": {
+        "n": 123,
+        "p50_ms": 0.5335000000741275,
+        "p95_ms": 0.7719600000200444,
+        "p99_ms": 1.170660000125281,
+        "max_ms": 1.2842999999520543,
+        "over_50ms": 0,
+        "over_50ms_fraction": 0.0
+      },
+      "stability": {
+        "observed": true,
+        "diagnostic_controls": 20,
+        "all_in_goal": true,
+        "last10_max_speed_m_s": 0.004908444243483245,
+        "stable": true,
+        "scope": "Post-termination open-gripper diagnostic; excluded from benchmark steps and success denominator."
+      },
+      "benchmark_elapsed_s": 1.0413307999999688
+    },
+    {
+      "demo": "demo_21",
+      "success": true,
+      "steps": 90,
+      "intervention_steps": 0,
+      "attempts": 0,
+      "verified_regrasps": 0,
+      "failed_attempts": 0,
+      "events": [],
+      "phases": {
+        "NORMAL": 90
+      },
+      "selection_counts": {
+        "2": 90
+      },
+      "compute_timing": {
+        "n": 90,
+        "p50_ms": 0.45325000007778726,
+        "p95_ms": 0.5945750000023509,
+        "p99_ms": 0.8332499999187346,
+        "max_ms": 1.13140000007661,
+        "over_50ms": 0,
+        "over_50ms_fraction": 0.0
+      },
+      "stability": {
+        "observed": true,
+        "diagnostic_controls": 20,
+        "all_in_goal": true,
+        "last10_max_speed_m_s": 0.0017623096937313676,
+        "stable": true,
+        "scope": "Post-termination open-gripper diagnostic; excluded from benchmark steps and success denominator."
+      },
+      "benchmark_elapsed_s": 0.6301994999998897
+    },
+    {
+      "demo": "demo_195",
+      "success": true,
+      "steps": 110,
+      "intervention_steps": 0,
+      "attempts": 0,
+      "verified_regrasps": 0,
+      "failed_attempts": 0,
+      "events": [],
+      "phases": {
+        "NORMAL": 110
+      },
+      "selection_counts": {
+        "2": 110
+      },
+      "compute_timing": {
+        "n": 110,
+        "p50_ms": 0.41889999999966676,
+        "p95_ms": 0.593050000088624,
+        "p99_ms": 0.7719869999982618,
+        "max_ms": 0.8388999999624502,
+        "over_50ms": 0,
+        "over_50ms_fraction": 0.0
+      },
+      "stability": {
+        "observed": true,
+        "diagnostic_controls": 20,
+        "all_in_goal": true,
+        "last10_max_speed_m_s": 0.004662048013415188,
+        "stable": true,
+        "scope": "Post-termination open-gripper diagnostic; excluded from benchmark steps and success denominator."
+      },
+      "benchmark_elapsed_s": 0.8317461999999978
+    },
+    {
+      "demo": "demo_150",
+      "success": true,
+      "steps": 159,
+      "intervention_steps": 10,
+      "attempts": 1,
+      "verified_regrasps": 0,
+      "failed_attempts": 0,
+      "events": [
+        {
+          "step": 150,
+          "from": "NORMAL",
+          "to": "RETRACT",
+          "reason": "long_no_progress",
+          "attempt": 1,
+          "object_position": [
+            0.298679918050766,
+            0.3506760597229004,
+            1.0166202783584595
+          ]
+        }
+      ],
+      "phases": {
+        "NORMAL": 149,
+        "RETRACT": 10
+      },
+      "selection_counts": {
+        "2": 159
+      },
+      "compute_timing": {
+        "n": 159,
+        "p50_ms": 0.40669999998499407,
+        "p95_ms": 0.6690500000331664,
+        "p99_ms": 0.8341359999894848,
+        "max_ms": 1.3844000000062806,
+        "over_50ms": 0,
+        "over_50ms_fraction": 0.0
+      },
+      "stability": {
+        "observed": true,
+        "diagnostic_controls": 20,
+        "all_in_goal": true,
+        "last10_max_speed_m_s": 0.0011813574383268133,
+        "stable": true,
+        "scope": "Post-termination open-gripper diagnostic; excluded from benchmark steps and success denominator."
+      },
+      "benchmark_elapsed_s": 1.1684615000001486
+    },
+    {
+      "demo": "demo_188",
+      "success": true,
+      "steps": 231,
+      "intervention_steps": 160,
+      "attempts": 1,
+      "verified_regrasps": 1,
+      "failed_attempts": 0,
+      "events": [
+        {
+          "step": 72,
+          "from": "NORMAL",
+          "to": "RETRACT",
+          "reason": "observed_grasp_loss",
+          "attempt": 1,
+          "object_position": [
+            0.14121022820472717,
+            0.12008847296237946,
+            0.8601433038711548
+          ]
+        },
+        {
+          "step": 80,
+          "from": "RETRACT",
+          "to": "ALIGN",
+          "reason": "retracted",
+          "attempt": 1,
+          "object_position": [
+            0.14074645936489105,
+            0.1201358512043953,
+            0.8600752949714661
+          ]
+        },
+        {
+          "step": 94,
+          "from": "ALIGN",
+          "to": "DESCEND",
+          "reason": "aligned_above_object",
+          "attempt": 1,
+          "object_position": [
+            0.1407790184020996,
+            0.12018610537052155,
+            0.8600555658340454
+          ]
+        },
+        {
+          "step": 112,
+          "from": "DESCEND",
+          "to": "CLOSE",
+          "reason": "at_grasp_pose",
+          "attempt": 1,
+          "object_position": [
+            0.14079025387763977,
+            0.12024776637554169,
+            0.8600593209266663
+          ]
+        },
+        {
+          "step": 130,
+          "from": "CLOSE",
+          "to": "TEST_LIFT",
+          "reason": "close_commands_executed",
+          "attempt": 1,
+          "object_position": [
+            0.14453192055225372,
+            0.12215130031108856,
+            0.8622283339500427
+          ]
+        },
+        {
+          "step": 137,
+          "from": "TEST_LIFT",
+          "to": "LIFT",
+          "reason": "lift_follow_confirmed",
+          "attempt": 1,
+          "object_position": [
+            0.14558975398540497,
+            0.12223224341869354,
+            0.888313889503479
+          ]
+        },
+        {
+          "step": 159,
+          "from": "LIFT",
+          "to": "CARRY",
+          "reason": "clearance_reached",
+          "attempt": 1,
+          "object_position": [
+            0.14091596007347107,
+            0.11989741772413254,
+            1.0665745735168457
+          ]
+        },
+        {
+          "step": 194,
+          "from": "CARRY",
+          "to": "PLACE",
+          "reason": "above_target",
+          "attempt": 1,
+          "object_position": [
+            0.17659224569797516,
+            0.36800774931907654,
+            1.060548186302185
+          ]
+        },
+        {
+          "step": 211,
+          "from": "PLACE",
+          "to": "RELEASE",
+          "reason": "at_release_height",
+          "attempt": 1,
+          "object_position": [
+            0.16024446487426758,
+            0.38224390149116516,
+            0.8919326066970825
+          ]
+        },
+        {
+          "step": 227,
+          "from": "RELEASE",
+          "to": "RETREAT",
+          "reason": "release_commands_executed",
+          "attempt": 1,
+          "object_position": [
+            0.15485265851020813,
+            0.38035985827445984,
+            0.8600637316703796
+          ]
+        }
+      ],
+      "phases": {
+        "NORMAL": 71,
+        "RETRACT": 9,
+        "ALIGN": 14,
+        "DESCEND": 18,
+        "CLOSE": 18,
+        "TEST_LIFT": 7,
+        "LIFT": 22,
+        "CARRY": 35,
+        "PLACE": 17,
+        "RELEASE": 16,
+        "RETREAT": 4
+      },
+      "selection_counts": {
+        "2": 231
+      },
+      "compute_timing": {
+        "n": 231,
+        "p50_ms": 0.5572999998548767,
+        "p95_ms": 0.8804500000678672,
+        "p99_ms": 1.0973099999546319,
+        "max_ms": 1.814299999978175,
+        "over_50ms": 0,
+        "over_50ms_fraction": 0.0
+      },
+      "stability": {
+        "observed": true,
+        "diagnostic_controls": 20,
+        "all_in_goal": true,
+        "last10_max_speed_m_s": 0.0016831711400300264,
+        "stable": true,
+        "scope": "Post-termination open-gripper diagnostic; excluded from benchmark steps and success denominator."
+      },
+      "benchmark_elapsed_s": 1.7134000999999444
+    },
+    {
+      "demo": "demo_97",
+      "success": true,
+      "steps": 108,
+      "intervention_steps": 0,
+      "attempts": 0,
+      "verified_regrasps": 0,
+      "failed_attempts": 0,
+      "events": [],
+      "phases": {
+        "NORMAL": 108
+      },
+      "selection_counts": {
+        "2": 108
+      },
+      "compute_timing": {
+        "n": 108,
+        "p50_ms": 0.4200000000764703,
+        "p95_ms": 0.6557550000025003,
+        "p99_ms": 0.7544860001530649,
+        "max_ms": 0.9952999998859013,
+        "over_50ms": 0,
+        "over_50ms_fraction": 0.0
+      },
+      "stability": {
+        "observed": true,
+        "diagnostic_controls": 20,
+        "all_in_goal": true,
+        "last10_max_speed_m_s": 0.004751091473735869,
+        "stable": true,
+        "scope": "Post-termination open-gripper diagnostic; excluded from benchmark steps and success denominator."
+      },
+      "benchmark_elapsed_s": 0.8100339000000076
+    },
+    {
+      "demo": "demo_87",
+      "success": true,
+      "steps": 319,
+      "intervention_steps": 229,
+      "attempts": 1,
+      "verified_regrasps": 1,
+      "failed_attempts": 0,
+      "events": [
+        {
+          "step": 91,
+          "from": "NORMAL",
+          "to": "RETRACT",
+          "reason": "long_no_progress",
+          "attempt": 1,
+          "object_position": [
+            0.084163598716259,
+            -0.13157515227794647,
+            0.8600622415542603
+          ]
+        },
+        {
+          "step": 109,
+          "from": "RETRACT",
+          "to": "ALIGN",
+          "reason": "retracted",
+          "attempt": 1,
+          "object_position": [
+            0.08409364521503448,
+            -0.13153333961963654,
+            0.8600607514381409
+          ]
+        },
+        {
+          "step": 155,
+          "from": "ALIGN",
+          "to": "DESCEND",
+          "reason": "aligned_above_object",
+          "attempt": 1,
+          "object_position": [
+            0.08411476761102676,
+            -0.131614550948143,
+            0.8600624799728394
+          ]
+        },
+        {
+          "step": 173,
+          "from": "DESCEND",
+          "to": "CLOSE",
+          "reason": "at_grasp_pose",
+          "attempt": 1,
+          "object_position": [
+            0.08406567573547363,
+            -0.13151997327804565,
+            0.8600673675537109
+          ]
+        },
+        {
+          "step": 191,
+          "from": "CLOSE",
+          "to": "TEST_LIFT",
+          "reason": "close_commands_executed",
+          "attempt": 1,
+          "object_position": [
+            0.0842680111527443,
+            -0.13071495294570923,
+            0.8601126074790955
+          ]
+        },
+        {
+          "step": 198,
+          "from": "TEST_LIFT",
+          "to": "LIFT",
+          "reason": "lift_follow_confirmed",
+          "attempt": 1,
+          "object_position": [
+            0.08635536581277847,
+            -0.12701267004013062,
+            0.8838675618171692
+          ]
+        },
+        {
+          "step": 221,
+          "from": "LIFT",
+          "to": "CARRY",
+          "reason": "clearance_reached",
+          "attempt": 1,
+          "object_position": [
+            0.08342353999614716,
+            -0.1266002506017685,
+            1.0682951211929321
+          ]
+        },
+        {
+          "step": 283,
+          "from": "CARRY",
+          "to": "PLACE",
+          "reason": "above_target",
+          "attempt": 1,
+          "object_position": [
+            0.17288465797901154,
+            0.3657984733581543,
+            1.0590710639953613
+          ]
+        },
+        {
+          "step": 300,
+          "from": "PLACE",
+          "to": "RELEASE",
+          "reason": "at_release_height",
+          "attempt": 1,
+          "object_position": [
+            0.16211475431919098,
+            0.3826407790184021,
+            0.896432638168335
+          ]
+        },
+        {
+          "step": 316,
+          "from": "RELEASE",
+          "to": "RETREAT",
+          "reason": "release_commands_executed",
+          "attempt": 1,
+          "object_position": [
+            0.16235597431659698,
+            0.3769584596157074,
+            0.8600673079490662
+          ]
+        }
+      ],
+      "phases": {
+        "NORMAL": 90,
+        "RETRACT": 19,
+        "ALIGN": 46,
+        "DESCEND": 18,
+        "CLOSE": 18,
+        "TEST_LIFT": 7,
+        "LIFT": 23,
+        "CARRY": 62,
+        "PLACE": 17,
+        "RELEASE": 16,
+        "RETREAT": 3
+      },
+      "selection_counts": {
+        "2": 319
+      },
+      "compute_timing": {
+        "n": 319,
+        "p50_ms": 0.5424000000857632,
+        "p95_ms": 0.973929999986467,
+        "p99_ms": 1.301969999949506,
+        "max_ms": 1.821900000095411,
+        "over_50ms": 0,
+        "over_50ms_fraction": 0.0
+      },
+      "stability": {
+        "observed": true,
+        "diagnostic_controls": 20,
+        "all_in_goal": true,
+        "last10_max_speed_m_s": 0.0015226821415126324,
+        "stable": true,
+        "scope": "Post-termination open-gripper diagnostic; excluded from benchmark steps and success denominator."
+      },
+      "benchmark_elapsed_s": 2.3730723000001035
+    },
+    {
+      "demo": "demo_7",
+      "success": true,
+      "steps": 119,
+      "intervention_steps": 0,
+      "attempts": 0,
+      "verified_regrasps": 0,
+      "failed_attempts": 0,
+      "events": [],
+      "phases": {
+        "NORMAL": 119
+      },
+      "selection_counts": {
+        "2": 119
+      },
+      "compute_timing": {
+        "n": 119,
+        "p50_ms": 0.4259999998339481,
+        "p95_ms": 0.6127900001274611,
+        "p99_ms": 0.7459220000828279,
+        "max_ms": 2.149199999848861,
+        "over_50ms": 0,
+        "over_50ms_fraction": 0.0
+      },
+      "stability": {
+        "observed": true,
+        "diagnostic_controls": 20,
+        "all_in_goal": true,
+        "last10_max_speed_m_s": 0.004728341882582754,
+        "stable": true,
+        "scope": "Post-termination open-gripper diagnostic; excluded from benchmark steps and success denominator."
+      },
+      "benchmark_elapsed_s": 0.8822235000000092
+    },
+    {
+      "demo": "demo_90",
+      "success": true,
+      "steps": 130,
+      "intervention_steps": 0,
+      "attempts": 0,
+      "verified_regrasps": 0,
+      "failed_attempts": 0,
+      "events": [],
+      "phases": {
+        "NORMAL": 130
+      },
+      "selection_counts": {
+        "2": 130
+      },
+      "compute_timing": {
+        "n": 130,
+        "p50_ms": 0.3992500001004373,
+        "p95_ms": 0.6136250000963628,
+        "p99_ms": 0.8573400000341274,
+        "max_ms": 0.9430000000065775,
+        "over_50ms": 0,
+        "over_50ms_fraction": 0.0
+      },
+      "stability": {
+        "observed": true,
+        "diagnostic_controls": 20,
+        "all_in_goal": true,
+        "last10_max_speed_m_s": 0.005127857439219952,
+        "stable": true,
+        "scope": "Post-termination open-gripper diagnostic; excluded from benchmark steps and success denominator."
+      },
+      "benchmark_elapsed_s": 0.9620782000001782
+    },
+    {
+      "demo": "demo_111",
+      "success": true,
+      "steps": 117,
+      "intervention_steps": 0,
+      "attempts": 0,
+      "verified_regrasps": 0,
+      "failed_attempts": 0,
+      "events": [],
+      "phases": {
+        "NORMAL": 117
+      },
+      "selection_counts": {
+        "2": 117
+      },
+      "compute_timing": {
+        "n": 117,
+        "p50_ms": 0.42589999998199346,
+        "p95_ms": 0.6190599999172264,
+        "p99_ms": 0.7788520001849975,
+        "max_ms": 1.878199999964636,
+        "over_50ms": 0,
+        "over_50ms_fraction": 0.0
+      },
+      "stability": {
+        "observed": true,
+        "diagnostic_controls": 20,
+        "all_in_goal": true,
+        "last10_max_speed_m_s": 0.014761770144104958,
+        "stable": true,
+        "scope": "Post-termination open-gripper diagnostic; excluded from benchmark steps and success denominator."
+      },
+      "benchmark_elapsed_s": 0.8918539999999666
+    },
+    {
+      "demo": "demo_120",
+      "success": true,
+      "steps": 116,
+      "intervention_steps": 0,
+      "attempts": 0,
+      "verified_regrasps": 0,
+      "failed_attempts": 0,
+      "events": [],
+      "phases": {
+        "NORMAL": 116
+      },
+      "selection_counts": {
+        "2": 116
+      },
+      "compute_timing": {
+        "n": 116,
+        "p50_ms": 0.43830000004163594,
+        "p95_ms": 0.6613250000668813,
+        "p99_ms": 0.8916199998793668,
+        "max_ms": 1.224800000045434,
+        "over_50ms": 0,
+        "over_50ms_fraction": 0.0
+      },
+      "stability": {
+        "observed": true,
+        "diagnostic_controls": 20,
+        "all_in_goal": true,
+        "last10_max_speed_m_s": 0.004885370144620538,
+        "stable": true,
+        "scope": "Post-termination open-gripper diagnostic; excluded from benchmark steps and success denominator."
+      },
+      "benchmark_elapsed_s": 0.9208022000000256
+    },
+    {
+      "demo": "demo_22",
+      "success": true,
+      "steps": 101,
+      "intervention_steps": 0,
+      "attempts": 0,
+      "verified_regrasps": 0,
+      "failed_attempts": 0,
+      "events": [],
+      "phases": {
+        "NORMAL": 101
+      },
+      "selection_counts": {
+        "2": 101
+      },
+      "compute_timing": {
+        "n": 101,
+        "p50_ms": 0.44439999987844203,
+        "p95_ms": 0.5831000000853237,
+        "p99_ms": 0.9657000000515836,
+        "max_ms": 0.981099999989965,
+        "over_50ms": 0,
+        "over_50ms_fraction": 0.0
+      },
+      "stability": {
+        "observed": true,
+        "diagnostic_controls": 20,
+        "all_in_goal": true,
+        "last10_max_speed_m_s": 0.004734972899314016,
+        "stable": true,
+        "scope": "Post-termination open-gripper diagnostic; excluded from benchmark steps and success denominator."
+      },
+      "benchmark_elapsed_s": 0.7543459999999413
+    },
+    {
+      "demo": "demo_156",
+      "success": true,
+      "steps": 117,
+      "intervention_steps": 0,
+      "attempts": 0,
+      "verified_regrasps": 0,
+      "failed_attempts": 0,
+      "events": [],
+      "phases": {
+        "NORMAL": 117
+      },
+      "selection_counts": {
+        "2": 117
+      },
+      "compute_timing": {
+        "n": 117,
+        "p50_ms": 0.42589999998199346,
+        "p95_ms": 0.5936400000791758,
+        "p99_ms": 0.8947760000046409,
+        "max_ms": 0.9959000001344975,
+        "over_50ms": 0,
+        "over_50ms_fraction": 0.0
+      },
+      "stability": {
+        "observed": true,
+        "diagnostic_controls": 20,
+        "all_in_goal": true,
+        "last10_max_speed_m_s": 0.02397477626800537,
+        "stable": false,
+        "scope": "Post-termination open-gripper diagnostic; excluded from benchmark steps and success denominator."
+      },
+      "benchmark_elapsed_s": 0.8625101000000086
+    },
+    {
+      "demo": "demo_185",
+      "success": true,
+      "steps": 117,
+      "intervention_steps": 0,
+      "attempts": 0,
+      "verified_regrasps": 0,
+      "failed_attempts": 0,
+      "events": [],
+      "phases": {
+        "NORMAL": 117
+      },
+      "selection_counts": {
+        "2": 117
+      },
+      "compute_timing": {
+        "n": 117,
+        "p50_ms": 0.40609999996377155,
+        "p95_ms": 0.5819999999403079,
+        "p99_ms": 0.6881759998577766,
+        "max_ms": 0.8147000000917615,
+        "over_50ms": 0,
+        "over_50ms_fraction": 0.0
+      },
+      "stability": {
+        "observed": true,
+        "diagnostic_controls": 20,
+        "all_in_goal": true,
+        "last10_max_speed_m_s": 0.0049672211753204465,
+        "stable": true,
+        "scope": "Post-termination open-gripper diagnostic; excluded from benchmark steps and success denominator."
+      },
+      "benchmark_elapsed_s": 0.8525523000000703
+    },
+    {
+      "demo": "demo_110",
+      "success": true,
+      "steps": 110,
+      "intervention_steps": 0,
+      "attempts": 0,
+      "verified_regrasps": 0,
+      "failed_attempts": 0,
+      "events": [],
+      "phases": {
+        "NORMAL": 110
+      },
+      "selection_counts": {
+        "2": 110
+      },
+      "compute_timing": {
+        "n": 110,
+        "p50_ms": 0.41109999995114777,
+        "p95_ms": 0.5523050000647345,
+        "p99_ms": 0.7904059999282246,
+        "max_ms": 0.8887000001323031,
+        "over_50ms": 0,
+        "over_50ms_fraction": 0.0
+      },
+      "stability": {
+        "observed": true,
+        "diagnostic_controls": 20,
+        "all_in_goal": true,
+        "last10_max_speed_m_s": 0.004059471539221704,
+        "stable": true,
+        "scope": "Post-termination open-gripper diagnostic; excluded from benchmark steps and success denominator."
+      },
+      "benchmark_elapsed_s": 0.792689800000062
+    },
+    {
+      "demo": "demo_179",
+      "success": true,
+      "steps": 144,
+      "intervention_steps": 0,
+      "attempts": 0,
+      "verified_regrasps": 0,
+      "failed_attempts": 0,
+      "events": [],
+      "phases": {
+        "NORMAL": 144
+      },
+      "selection_counts": {
+        "2": 144
+      },
+      "compute_timing": {
+        "n": 144,
+        "p50_ms": 0.4462000000557964,
+        "p95_ms": 0.6598849998795231,
+        "p99_ms": 0.8689130000630025,
+        "max_ms": 1.2639000001399836,
+        "over_50ms": 0,
+        "over_50ms_fraction": 0.0
+      },
+      "stability": {
+        "observed": true,
+        "diagnostic_controls": 20,
+        "all_in_goal": true,
+        "last10_max_speed_m_s": 0.001801592152332887,
+        "stable": true,
+        "scope": "Post-termination open-gripper diagnostic; excluded from benchmark steps and success denominator."
+      },
+      "benchmark_elapsed_s": 1.1062877000001663
+    },
+    {
+      "demo": "demo_43",
+      "success": true,
+      "steps": 297,
+      "intervention_steps": 207,
+      "attempts": 1,
+      "verified_regrasps": 1,
+      "failed_attempts": 0,
+      "events": [
+        {
+          "step": 91,
+          "from": "NORMAL",
+          "to": "RETRACT",
+          "reason": "long_no_progress",
+          "attempt": 1,
+          "object_position": [
+            0.05099326744675636,
+            -0.1577741801738739,
+            0.8600585460662842
+          ]
+        },
+        {
+          "step": 108,
+          "from": "RETRACT",
+          "to": "ALIGN",
+          "reason": "retracted",
+          "attempt": 1,
+          "object_position": [
+            0.05106270685791969,
+            -0.15776300430297852,
+            0.8600611686706543
+          ]
+        },
+        {
+          "step": 127,
+          "from": "ALIGN",
+          "to": "DESCEND",
+          "reason": "aligned_above_object",
+          "attempt": 1,
+          "object_position": [
+            0.05104701220989227,
+            -0.15772069990634918,
+            0.860058605670929
+          ]
+        },
+        {
+          "step": 147,
+          "from": "DESCEND",
+          "to": "CLOSE",
+          "reason": "at_grasp_pose",
+          "attempt": 1,
+          "object_position": [
+            0.05102425813674927,
+            -0.1577141135931015,
+            0.8600600957870483
+          ]
+        },
+        {
+          "step": 165,
+          "from": "CLOSE",
+          "to": "TEST_LIFT",
+          "reason": "close_commands_executed",
+          "attempt": 1,
+          "object_position": [
+            0.053425613790750504,
+            -0.15753288567066193,
+            0.8602085113525391
+          ]
+        },
+        {
+          "step": 172,
+          "from": "TEST_LIFT",
+          "to": "LIFT",
+          "reason": "lift_follow_confirmed",
+          "attempt": 1,
+          "object_position": [
+            0.05543602257966995,
+            -0.1570400893688202,
+            0.8844389915466309
+          ]
+        },
+        {
+          "step": 194,
+          "from": "LIFT",
+          "to": "CARRY",
+          "reason": "clearance_reached",
+          "attempt": 1,
+          "object_position": [
+            0.05263049155473709,
+            -0.156436026096344,
+            1.065849781036377
+          ]
+        },
+        {
+          "step": 260,
+          "from": "CARRY",
+          "to": "PLACE",
+          "reason": "above_target",
+          "attempt": 1,
+          "object_position": [
+            0.173425555229187,
+            0.3671339452266693,
+            1.0607444047927856
+          ]
+        },
+        {
+          "step": 277,
+          "from": "PLACE",
+          "to": "RELEASE",
+          "reason": "at_release_height",
+          "attempt": 1,
+          "object_position": [
+            0.16012069582939148,
+            0.3825560510158539,
+            0.8907970190048218
+          ]
+        },
+        {
+          "step": 293,
+          "from": "RELEASE",
+          "to": "RETREAT",
+          "reason": "release_commands_executed",
+          "attempt": 1,
+          "object_position": [
+            0.1555638611316681,
+            0.376896470785141,
+            0.8600822687149048
+          ]
+        }
+      ],
+      "phases": {
+        "NORMAL": 90,
+        "RETRACT": 18,
+        "ALIGN": 19,
+        "DESCEND": 20,
+        "CLOSE": 18,
+        "TEST_LIFT": 7,
+        "LIFT": 22,
+        "CARRY": 66,
+        "PLACE": 17,
+        "RELEASE": 16,
+        "RETREAT": 4
+      },
+      "selection_counts": {
+        "2": 297
+      },
+      "compute_timing": {
+        "n": 297,
+        "p50_ms": 0.5711000001156208,
+        "p95_ms": 0.7938400000512046,
+        "p99_ms": 1.1172359999909538,
+        "max_ms": 1.898499999924752,
+        "over_50ms": 0,
+        "over_50ms_fraction": 0.0
+      },
+      "stability": {
+        "observed": true,
+        "diagnostic_controls": 20,
+        "all_in_goal": true,
+        "last10_max_speed_m_s": 0.0016220673569478095,
+        "stable": true,
+        "scope": "Post-termination open-gripper diagnostic; excluded from benchmark steps and success denominator."
+      },
+      "benchmark_elapsed_s": 2.2377100999999584
+    }
+  ],
+  "controller_config": {
+    "delay": 2,
+    "stable_frames": 5,
+    "stall_steps": 40,
+    "stall_progress_m": 0.005,
+    "max_attempts": 2,
+    "position_gain": 0.5,
+    "max_delta_m": 0.035,
+    "orientation_gain": 0.5,
+    "max_rotation_rad": 0.15,
+    "relative_tolerance_m": 0.012,
+    "near_object_m": 0.09,
+    "grip_gap_min_m": 0.025,
+    "grip_gap_max_m": 0.067,
+    "verified_lift_m": 0.02,
+    "approach_clearance_m": 0.2,
+    "carry_clearance_m": 0.28,
+    "grasp_offset_z_m": 0.012,
+    "close_steps": 16,
+    "lift_probe_m": 0.06,
+    "stage_timeout": 70,
+    "minimum_normal_steps": 80,
+    "long_stall_steps": 65,
+    "progress_epsilon_m": 0.008,
+    "recovery_budget_step": 160,
+    "sideways_axis_z": 0.6,
+    "sideways_grasp_z_m": 0.008,
+    "alignment_switch": true,
+    "region_guard": true,
+    "alignment_stall_steps": 18,
+    "alignment_progress_m": 0.003,
+    "alignment_angle_weight_m": 0.08,
+    "alternate_alignment_timeout": 110,
+    "alternate_rotation_step_rad": 0.25,
+    "corner_distance_m": 0.065,
+    "corner_gap_m": 0.06,
+    "corner_offset_m": 0.006,
+    "corner_clearance_m": 0.001,
+    "time_budget": true,
+    "side_clearance": true,
+    "horizon_steps": 400,
+    "early_stall_steps": 25,
+    "descent_stall_steps": 18,
+    "safe_transit_delta_m": 0.05,
+    "side_gap_m": 0.056,
+    "side_margin_m": 0.001
+  },
+  "policy_sha256": "ef375a81d5c2a5dce26662c68c2965e1954c736cd824e40085a084073777af14",
+  "input": "PRIVILEGED_23D_STATE_AND_FIXED_TARGET",
+  "timing_scope": "Complete observation packing + BC + optional WM + recovery; physics/JSON outside timer. Parallel load can affect timings.",
+  "stability_scope": "20 diagnostic controls after first benchmark success; never added to benchmark steps or independent samples."
+}

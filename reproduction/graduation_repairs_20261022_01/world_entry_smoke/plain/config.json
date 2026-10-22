@@ -1,0 +1,82 @@
+{
+  "output_dir": "reproduction/graduation_repairs_20261022_01/world_entry_smoke/plain",
+  "method": "plain",
+  "dataset": "queuepair_20261012_01_real",
+  "train_data": null,
+  "dev_data": null,
+  "observation_semantics": "legacy",
+  "seed": 17,
+  "width": 16,
+  "updates": 2,
+  "batch": 2,
+  "lr": 0.0003,
+  "rank_weight": 0.2,
+  "risk_weight": 0.5,
+  "future_only": true,
+  "eval_every": 1,
+  "threads": 1,
+  "device": "cpu",
+  "dim": 23,
+  "horizon": 8,
+  "entrypoint": "robot_can_v2.train_world",
+  "input": "PRIVILEGED_STATE_DIAGNOSTIC",
+  "n_groups": 160,
+  "n_candidates": 4,
+  "selection": "minimum dev score mean_regret; earliest tie",
+  "score_head_usage": "trained",
+  "effective_rank_weight": 0.0,
+  "batch_schedule": "CPU generator seeded independently of model initialization; matched across methods",
+  "dataset_provenance": {
+    "train": {
+      "path": "C:\\Users\\Livio\\Desktop\\robot_can\\data\\branches_train_queuepair_20261012_01_real.npz",
+      "sha256": "28f9c7bc145d911adbfc290ed6a62ab1d2f82b5c0766f3103fe63a339c6b9a8c",
+      "observation_semantics": "legacy",
+      "semantics_declaration": "historical_missing_metadata",
+      "parents": [
+        "demo_1",
+        "demo_10",
+        "demo_101",
+        "demo_104",
+        "demo_108",
+        "demo_11",
+        "demo_129",
+        "demo_133",
+        "demo_136",
+        "demo_152",
+        "demo_159",
+        "demo_180",
+        "demo_33",
+        "demo_44",
+        "demo_47",
+        "demo_54",
+        "demo_74",
+        "demo_88",
+        "demo_92",
+        "demo_94"
+      ]
+    },
+    "dev": {
+      "path": "C:\\Users\\Livio\\Desktop\\robot_can\\data\\branches_dev_queuepair_20261012_01_real.npz",
+      "sha256": "a4e700269544f3c853d014b9a1bcfbb6004c269ba91da6ea53dd953e3fd11a05",
+      "observation_semantics": "legacy",
+      "semantics_declaration": "historical_missing_metadata",
+      "parents": [
+        "demo_0",
+        "demo_105",
+        "demo_118",
+        "demo_124",
+        "demo_174",
+        "demo_28",
+        "demo_49",
+        "demo_62"
+      ]
+    }
+  },
+  "source_sha256": {
+    "robot_can_v2\\train_world.py": "3fd1d817a1a152e799c02102870ca723f5e171ebb474e34cb09bc91a379f6eab",
+    "world_model.py": "ac82be1227b91e43da2df0cbb4cdfe35494068147ee9ec99bc526383bdf1946a",
+    "robot_can_v2\\metrics.py": "0fccca25c26e920767e24e13348b1678609c05611675d0cc8e4ce416e7015fbb"
+  },
+  "parameters": 3769,
+  "trainable_parameters": 3769
+}

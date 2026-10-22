@@ -1,0 +1,13 @@
+# 机器人抓取搬运与失败恢复系统详细设计
+
+[可编辑Word文档](机器人抓取搬运与失败恢复系统详细设计.docx) · [Markdown完整源稿](详细设计.md)
+
+文档以实现基线672fa48和2026年10月22日冻结确认结果为依据，包含12章、数学公式、接口与数据表、架构和执行图、实验验收、结果解释、10条已核验参考文献以及3个附录。采用中文本科技术文档通用版式；未套用未提供的学校专用模板，也不代替学院正式格式审核。
+
+最终Word为52页，源稿约2.2万汉字，含31个编号公式、16张表和9幅图。所有52页已按原分辨率逐页视觉检查；139个含行内公式的Office Math对象完成残留命令与负号保全核对。build_manifest记录Word更新目录前的生成状态，quality_report记录更新域、分页检查后的最终文件哈希。
+
+sections目录保留分章正文，research目录保存代码事实、一手文献核验和图表数据来源，assets保存插图。文档中的数学公式是可编辑Office Math对象；目录与页码通过本机Microsoft Word更新。原实现、权重及既有实验没有因本次编写而修改。
+
+复现生成使用Codex工作区提供的Python、python-docx、Pillow和lxml。LaTeX转换与打印图分别使用独立临时工具目录中的latex2mathml 3.81.1和Matplotlib 3.11.2，不安装到项目研究虚拟环境。build_design.py汇总源稿、图表并生成Word；export_word.ps1更新Word域和导出内部检查PDF；render_with_word_pdf.py复用随工具提供的render_docx.py光栅化逻辑。当前Windows没有LibreOffice，因此PDF转换明确采用本机Word，未声称经过LibreOffice验证。
+
+生成文件可以显式使用--replace-generated更新；该选项只针对本目录的文档产物，不适用于任何原始研究资产。最终视觉检查范围和文件哈希保存在quality_report.json。内部分页PNG和PDF位于系统临时目录，不作为交付正文或新的实验样本。

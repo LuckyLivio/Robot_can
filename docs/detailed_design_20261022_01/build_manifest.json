@@ -1,0 +1,41 @@
+{
+  "implementation_baseline": "672fa48",
+  "document_kind": "detailed technical design",
+  "chapters": 12,
+  "cjk_characters": 21607,
+  "characters": 42104,
+  "equations": 31,
+  "inline_math_failures": 0,
+  "tables": 16,
+  "figures": 9,
+  "references": 10,
+  "math_pipeline": "latex2mathml 3.81.1 and Microsoft Office MML2OMML XSL; editable Office Math",
+  "sources_sha256": {
+    "docs/detailed_design_20261022_01/sections/01_04_overview.md": "7264a8f30512e6628f80dac166a9daeaeae2e2f633f4aecbb3b2b79dc89cc07b",
+    "docs/detailed_design_20261022_01/sections/05_06_models.md": "06952c4508c47b121687bd1f1e45c5ab09f15ed08af2c759778496fa7fe8d403",
+    "docs/detailed_design_20261022_01/sections/07_08_recovery.md": "6b449ea8b591b83716e723edffc50185c5bd83cde81cd5ae0c7f2bb79726c3d4",
+    "docs/detailed_design_20261022_01/sections/09_12_validation.md": "11b3d96c6d0dfb8c819994c272a9d038cadcb6ae5b8304d5624cb15b2538c601",
+    "docs/detailed_design_20261022_01/research/references_verified.json": "7530ab510e99b43f3ba0415ab7cdfb32cfa5735c6dc6c075649fbffe603455a8",
+    "common.py": "7618e9b1e05407d97727001ecc8f012ecca4876bccb423368f8d90500e8a5db0",
+    "world_model.py": "ac82be1227b91e43da2df0cbb4cdfe35494068147ee9ec99bc526383bdf1946a",
+    "robot_can_v2/analyze.py": "a132d9524552aec624cb39a390d3e4222b67bbfe6eaad77e0485f03520247e86",
+    "robot_can_v2/budget.py": "888f22561a5dd9c4e2d84d97ae61ee8eda4e985bbde3070f5e1558022e38e351",
+    "robot_can_v2/evaluate.py": "2f9495e930797af432de30af11b9ec190a20999027df3ebeac559ea414023cf0",
+    "robot_can_v2/evaluate_delay.py": "7ebf238c816384129af6c021f39122f4abcc42d867aef96c177868e4c829ea9a",
+    "robot_can_v2/metrics.py": "0fccca25c26e920767e24e13348b1678609c05611675d0cc8e4ce416e7015fbb",
+    "robot_can_v2/observations.py": "1f905faa4f02e4cf0246560bad0f8e1235423a814f60872e54b815be3f2f7aa8",
+    "robot_can_v2/study.py": "0989c03262e822e4df7ecd5e9380de4020a1f52a20b3825c3317a1b495d21da0",
+    "robot_can_v2/train_policy.py": "29b3dbb832b984398762589b41f5d3515b63daeecdb9f1e113ff399b28ae0a2e",
+    "robot_can_v2/train_world.py": "3fd1d817a1a152e799c02102870ca723f5e171ebb474e34cb09bc91a379f6eab",
+    "robot_can_v2/__init__.py": "016f9ebfa2c53f07bd8ce96b3eed68a6b11546ec0217bb0062bbc92d959e2d35",
+    "reproduction/graduation_repairs_20261022_01/REPORT.md": "97fe413b0fa514bd5cced6955c939b050d1bcbcecbaf4e0fd0db3577d388bb31",
+    "reproduction/graduation_repairs_20261022_01/analysis/confirmation/summary.json": "1e00b40c8e5dad64e4def4eb0582e897a9b235d1bece85537c089ac0dd1de290",
+    "reproduction/graduation_repairs_20261022_01/analysis/confirmation/cells.csv": "fff0db39488e2e516f057f0c384eb732eedddd867e5aa0db8d1c7b16262e7729",
+    "reproduction/graduation_repairs_20261022_01/analysis/confirmation/paired_effects.csv": "4f400602f6d2e0ab36b5da3006949f4dc3b01cc7828fc368d3d806cb7f3f9450"
+  },
+  "outputs_sha256": {
+    "机器人抓取搬运与失败恢复系统详细设计.docx": "31845c90368a8d113fb1fda559b0abf6cccb35753bcaab645a49ad071b921d83",
+    "详细设计.md": "cbbbfda0bf8d8718545a637dda3d04893513389bafbb013c3f3a6a2f9893985c"
+  },
+  "note": "Build completion is not visual QA; Word field update and every-page rendering inspection follow separately."
+}

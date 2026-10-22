@@ -1,34 +1,26 @@
-# CAN LAB · 机器人世界模型与恢复控制
+# CAN LAB · 机器人抓取与恢复控制
 
-项目研究延迟控制下的罐体抓取搬运：冻结BC策略提供动作候选，世界模型预测评分，恢复控制器处理失抓、支撑姿态及受约束搬运。目前使用特权状态仿真，尚无视觉输入或实机验证。
+2026-10-22：完成高优先级修复、新BC配对训练、360次开发与1680次冻结后确认；新增13页世界模型系统详细设计。
 
-## 当前状态（2026-10-19）
+[本轮完整报告](reproduction/graduation_repairs_20261022_01/REPORT.md) · [结果前端](reproduction/graduation_repairs_20261022_01/index.html) · [新活动代码与命令](robot_can_v2/README.md)
 
-**v21 已完成六组共54回合小测试与消融，未通过预定门槛，未采用。**
+[世界模型系统详细设计（13页）](docs/world_model_design_20261022_01/README.md) · [可编辑Word](docs/world_model_design_20261022_01/基于世界模型的机器人抓取搬运系统设计与实现详细设计.docx) · [设计源稿](docs/world_model_design_20261022_01/详细设计.md) · [原52页版本存档](docs/detailed_design_20261022_01/README.md)
 
-实际 v19 2/9；实际 v20 3/9；原预算候选 7/9；仅 A 重定位衔接 2/9；仅 B 终端放置 2/9；完整 v21 2/9。
+新实现统一观测时序，修复prediction_only与评估契约，拒绝覆盖旧产物。旧源码、权重、数据和实验结果保留；原正式v5仍是冻结参考，预算候选不因开发门槛通过就自动采用。
 
-每组9个条件共用8个不同物理起点：8个标准条件与1个复用6000005起点的clearance专用配置。A、B及组合均基于完整v19。A保留下降前三步原反馈，随后仅延长风险方向反馈；B只在实际终端放置启用，搬运沿用v19；原预算候选保护不同，仅作成功数参考。54回合不是54个独立起点，这组困难案例成功率不能当作项目总体成功率。
+| 同批冻结策略 | 无恢复，干净/噪声 | v5恢复，干净/噪声 |
+|---|---|---|
+| BC | 56/60 / 55/60 | 59/60 / 60/60 |
+| Full（三固定种子） | 168/180 / 168/180 | 178/180 / 174/180 |
 
-保持400步、真实D2 FIFO、原保护阈值与成功定义。564回合扩展诊断、三版各240回合开发对照（合计720）及1440回合独立确认均未运行，未生成新确认起点。保留v20、v19、预算候选与全部旧代码、权重和结果。未做泛化训练，未写论文。
+确认共60个独立起点。Full重复种子与噪声执行不增加起点数。新BC观测确认另计240次，不能与旧BC混合。预算候选存在一次救回和一次退步，具体配对区间见本轮完整报告；本轮保留为未采用候选。
 
-[本轮完整报告](reproduction/improvement_v21_20261019_01/REPORT.md) · [v21 前端](reproduction/improvement_v21_20261019_01/index.html) · [正式协议](reproduction/improvement_v21_20261019_01/protocols/PLAN.md) · [v20 原报告](reproduction/improvement_v20_20261019_01/REPORT.md)
-
-## 启动前端
+启动展示：
 
 ```powershell
-Set-Location 'C:\Users\Livio\Desktop\robot_can'
-& '.\.venv\Scripts\python.exe' -m http.server 8766 --bind 127.0.0.1 --directory 'C:\Users\Livio\Desktop\robot_can'
+& '.\.venv\Scripts\python.exe' -m http.server 8766 --bind 127.0.0.1
 ```
 
-打开完整地址：**http://127.0.0.1:8766/reproduction/improvement_v21_20261019_01/index.html** 。已有8766服务时直接打开，不重复启动；服务终端保持运行，Ctrl+C停止。根地址会跳转到本轮前端。
+浏览 http://127.0.0.1:8766/ 。已有同目录服务时直接刷新。
 
-页面包含六组实际结果、预定门槛、逐条件证据和分类图表。本轮没有新拍的v21机器人视频，历史演示按其真实版本标注。
-
-## 导航
-
-- [分类导航](PROJECT_NAVIGATION.md) · [环境与运行指南](PROGRAM_GUIDE.md)
-- [项目状态](STATUS.md) · [结果索引](RESULTS.md) · [证据索引](EVIDENCE_INDEX.md)
-- [演示指南](DEMO_GUIDE.md) · [写作材料交接](THESIS_HANDOFF_LATEST.md)
-- [本轮目录和核验命令](reproduction/improvement_v21_20261019_01/README.md)
-- [此前README原样快照](reproduction/improvement_v21_20261019_01/before/README.md)
+[分类导航](PROJECT_NAVIGATION.md) · [运行指南](PROGRAM_GUIDE.md) · [结果](RESULTS.md) · [证据](EVIDENCE_INDEX.md) · [此前README原字节](reproduction/graduation_repairs_20261022_01/before/README.md)

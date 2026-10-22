@@ -1,0 +1,5 @@
+label,method,controller,observation_semantics,study_arm,noise,independent_starts,fixed_world_model_seeds,executions,successes,success_percent,color
+New legacy BC,bc,none,legacy,recovery_factorial,0.0,30,,30,22,73.33333333333333,#527EAA
+Canonical BC,bc,none,canonical,recovery_factorial,0.0,30,,30,25,83.33333333333334,#448B78
+New legacy BC,bc,none,legacy,recovery_factorial,0.05,30,,30,25,83.33333333333334,#527EAA
+Canonical BC,bc,none,canonical,recovery_factorial,0.05,30,,30,26,86.66666666666667,#448B78

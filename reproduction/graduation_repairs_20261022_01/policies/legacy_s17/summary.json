@@ -1,0 +1,16 @@
+{
+  "status": "complete",
+  "best_update": 1000,
+  "best_dev_nll": -1.2000123284025592,
+  "final_update": 15000,
+  "final_dev_nll": 2.5095935980180712,
+  "batch_sha256": "205c8bbfd0ddf688252d664162537abaae589dca6cffaf564456d717429a2e80",
+  "initial_parameter_sha256": "476689b0675139f04cdcfe04ecf58433207f388d20935025093e5dbc75f73f10",
+  "elapsed_s": 40.80752430000007,
+  "artifacts_sha256": {
+    "config.json": "d071eaa798edb3d43dcfc515d9f2f9c0732b199f73f16b4981f348e117c0a38e",
+    "log.jsonl": "a31d9d5500fd4cca9ef5bddbe1b8a7443f8db502ff0bdbc6f021a2937c04cae7",
+    "best.pt": "a11abc2a4bd4e8c8721a27a962df0c8f5476ffe25999a779d06e2eb3f4e8280c",
+    "final.pt": "910dd328611aa30dfe9afd4cecff5b11449dbeaaed1d59a5e80c062b06235af9"
+  }
+}

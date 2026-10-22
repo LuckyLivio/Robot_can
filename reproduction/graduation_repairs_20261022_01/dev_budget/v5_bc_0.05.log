@@ -1,0 +1,32 @@
+[robosuite WARNING] Could not import robosuite_models. Some robots may not be available. If you want to use these robots, please install robosuite_models from source (https://github.com/ARISE-Initiative/robosuite_models) or through pip install. (__init__.py:30)
+[robosuite WARNING] Could not load the mink-based whole-body IK. Make sure you install related import properly, otherwise you will not be able to use the default IK controller setting for GR1 robot. (__init__.py:40)
+{"job": "v5_bc_0.05", "demo": "demo_105", "success": true, "steps": 314}
+{"job": "v5_bc_0.05", "demo": "demo_118", "success": true, "steps": 84}
+{"job": "v5_bc_0.05", "demo": "demo_62", "success": true, "steps": 121}
+{"job": "v5_bc_0.05", "demo": "demo_174", "success": true, "steps": 145}
+{"job": "v5_bc_0.05", "demo": "demo_124", "success": true, "steps": 376}
+{"job": "v5_bc_0.05", "demo": "demo_28", "success": true, "steps": 123}
+{"job": "v5_bc_0.05", "demo": "demo_0", "success": true, "steps": 104}
+{"job": "v5_bc_0.05", "demo": "demo_49", "success": true, "steps": 105}
+{"job": "v5_bc_0.05", "demo": "demo_73", "success": true, "steps": 351}
+{"job": "v5_bc_0.05", "demo": "demo_128", "success": true, "steps": 100}
+{"job": "v5_bc_0.05", "demo": "demo_173", "success": true, "steps": 129}
+{"job": "v5_bc_0.05", "demo": "demo_32", "success": true, "steps": 108}
+{"job": "v5_bc_0.05", "demo": "demo_26", "success": true, "steps": 116}
+{"job": "v5_bc_0.05", "demo": "demo_85", "success": true, "steps": 123}
+{"job": "v5_bc_0.05", "demo": "demo_21", "success": true, "steps": 90}
+{"job": "v5_bc_0.05", "demo": "demo_195", "success": true, "steps": 110}
+{"job": "v5_bc_0.05", "demo": "demo_150", "success": true, "steps": 159}
+{"job": "v5_bc_0.05", "demo": "demo_188", "success": true, "steps": 231}
+{"job": "v5_bc_0.05", "demo": "demo_97", "success": true, "steps": 108}
+{"job": "v5_bc_0.05", "demo": "demo_87", "success": true, "steps": 319}
+{"job": "v5_bc_0.05", "demo": "demo_7", "success": true, "steps": 119}
+{"job": "v5_bc_0.05", "demo": "demo_90", "success": true, "steps": 130}
+{"job": "v5_bc_0.05", "demo": "demo_111", "success": true, "steps": 117}
+{"job": "v5_bc_0.05", "demo": "demo_120", "success": true, "steps": 116}
+{"job": "v5_bc_0.05", "demo": "demo_22", "success": true, "steps": 101}
+{"job": "v5_bc_0.05", "demo": "demo_156", "success": true, "steps": 117}
+{"job": "v5_bc_0.05", "demo": "demo_185", "success": true, "steps": 117}
+{"job": "v5_bc_0.05", "demo": "demo_110", "success": true, "steps": 110}
+{"job": "v5_bc_0.05", "demo": "demo_179", "success": true, "steps": 144}
+{"job": "v5_bc_0.05", "demo": "demo_43", "success": true, "steps": 297}

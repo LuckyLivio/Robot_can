@@ -1,0 +1,110 @@
+{
+  "passed": true,
+  "verified_utc": "2026-10-22T05:14:47.432218+00:00",
+  "errors": [],
+  "scope": "Rewritten chapter-style detailed design; no new training or simulation",
+  "implementation_baseline": "da37c1f1babdc6632f2853406a29ae731e6813b0",
+  "pages": 13,
+  "cjk_characters": 5773,
+  "numbered_equations": 6,
+  "office_math_objects": 26,
+  "tables": 6,
+  "figures": 6,
+  "references": 6,
+  "native_word_fields_updated": true,
+  "blank_body_pages": [],
+  "body_character_counts": [
+    449,
+    824,
+    956,
+    770,
+    1021,
+    600,
+    971,
+    510,
+    566,
+    1006,
+    960,
+    584,
+    1421
+  ],
+  "math_check_scope": "All expressions checked for unconverted commands and minus preservation after native Word save",
+  "visual_reviews": [
+    {
+      "reviewer": "design_models",
+      "pages": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "all_pages_opened_original": true,
+      "render": "format v2",
+      "passed": true
+    },
+    {
+      "reviewer": "design_recovery",
+      "pages": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "all_pages_opened_original": true,
+      "render": "format v2",
+      "passed": true
+    },
+    {
+      "reviewer": "design_references",
+      "pages": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "all_pages_opened_original": true,
+      "render": "format v2",
+      "passed": true
+    }
+  ],
+  "layout_repairs": "State table kept together; short action intervals are Office Math; summary kept whole with following references",
+  "conversion_backend": "Microsoft Word native PDF export plus packaged render_docx.py rasterizer; LibreOffice absent",
+  "final_outputs_sha256": {
+    "基于世界模型的机器人抓取搬运系统设计与实现详细设计.docx": "4a2f61c9286a2610863933395f7f0dc1c1c0ecd0ccc9171b026fe80a9a53c0cd",
+    "详细设计.md": "6b99115bd78fb50009d0166ba9925104d71742ab7d2c4fd63e7fd44082bf1722"
+  },
+  "internal_pdf_sha256": "2b2f8fb7e91f2697138735155d306cea0943e8b83afa32ea465c1fc9855f91ad",
+  "reference_pdf_sha256": "7955c52863ef1dd4f50bd1d6ad794ebe50864a6b6946029be3921670e3b51c9d",
+  "original_52_page_outputs_sha256": {
+    "机器人抓取搬运与失败恢复系统详细设计.docx": "d7dea40aa9826df8485c4cb5e90e98f379f1e5c7d7a8a29d5a86b2a2f3c14adb",
+    "详细设计.md": "cbbbfda0bf8d8718545a637dda3d04893513389bafbb013c3f3a6a2f9893985c"
+  },
+  "project_changes_outside_new_docs_and_navigation": [],
+  "qa_intermediates": "C:\\Users\\Livio\\AppData\\Local\\Temp\\robot_can_wm_design_format_20261022_01\\render_v2",
+  "reference_document_content_reused": "Chapter structure and presentation conventions only; original prose and figures",
+  "not_a_new_experiment_sample": true,
+  "revision_audit": "research/revision_audit_20261022.md",
+  "review_scope": "All six numbered formulas, six figures, six tables, implementation contracts and Chinese undergraduate thesis language",
+  "lightweight_cpu_checks": {
+    "bc_parameters": 827445,
+    "full_parameters": 87321,
+    "bc_output": "B x 8 x 7",
+    "full_outputs": [
+      "B x 8 x 23",
+      "B x 8 x 2"
+    ]
+  },
+  "dataset_checks": {
+    "train_groups": 160,
+    "dev_groups": 64,
+    "train_parents": 20,
+    "dev_parents": 8,
+    "candidates": 4,
+    "horizon": 8
+  },
+  "acronym_check": "Advisory script executed; Chinese definitions, proper names, state constants and bibliography author names manually reviewed",
+  "runtime_success_source_sha256": "1abafb93f272c6ccda7f207b6c5c12c0c9b2f97087d60754dba402786c70c4ee",
+  "formatting_baseline": "bbdbb0da2f5aa6bfda5f820517f40d9b5dbf5672",
+  "format_audit": "format_audit.json"
+}

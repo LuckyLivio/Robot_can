@@ -1,0 +1,17 @@
+label,method,controller,observation_semantics,study_arm,noise,independent_starts,fixed_world_model_seeds,executions,successes,success_percent,color
+"BC
+v5",bc,v5,legacy,recovery_factorial,0.0,60,,60,59,98.33333333333333,#8DB0C9
+"BC
+Queue budget",bc,queue_budget,legacy,recovery_factorial,0.0,60,,60,59,98.33333333333333,#366E96
+"Full
+v5",full,v5,legacy,recovery_factorial,0.0,60,17;23;41,180,178,98.88888888888889,#E4B887
+"Full
+Queue budget",full,queue_budget,legacy,recovery_factorial,0.0,60,17;23;41,180,179,99.44444444444444,#B97236
+"BC
+v5",bc,v5,legacy,recovery_factorial,0.05,60,,60,60,100.0,#8DB0C9
+"BC
+Queue budget",bc,queue_budget,legacy,recovery_factorial,0.05,60,,60,59,98.33333333333333,#366E96
+"Full
+v5",full,v5,legacy,recovery_factorial,0.05,60,17;23;41,180,174,96.66666666666667,#E4B887
+"Full
+Queue budget",full,queue_budget,legacy,recovery_factorial,0.05,60,17;23;41,180,174,96.66666666666667,#B97236

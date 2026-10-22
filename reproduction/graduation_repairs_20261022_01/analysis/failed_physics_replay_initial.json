@@ -1,0 +1,35 @@
+{
+  "stage": "C:\\Users\\Livio\\Desktop\\robot_can\\reproduction\\graduation_repairs_20261022_01\\confirmation",
+  "started_utc": "2026-10-22T02:13:20.864187+00:00",
+  "script_sha256": "df6e9683bd8fe9f669f63a4ca25274e3ae6c2f75b737d8e7f93e00a49ff2d049",
+  "passed": false,
+  "episodes": [],
+  "selection_rule": "Without inspecting outcomes: recovery_factorial, noise=0, none/BC and v5/Full(seed=17), first two registered demos in each.",
+  "state_tolerance": 1e-05,
+  "supervisor_action_tolerance": 1e-06,
+  "additional_independent_samples": 0,
+  "scope": "Actual MuJoCo/OSC action replay and v5 supervisor regeneration conditioned on saved policy/WM proposals; no retraining or independent policy/WM inference.",
+  "selected_episodes": [
+    {
+      "job": "none_bc_sNone_0",
+      "demos": [
+        "demo_22000000",
+        "demo_22000001"
+      ]
+    },
+    {
+      "job": "v5_full_s17_0",
+      "demos": [
+        "demo_22000000",
+        "demo_22000001"
+      ]
+    }
+  ],
+  "trace_verification_sha256": "53ba304b00df8717f67d7071d798812f729e15a2f5569230cc67d11c9fe4ed68",
+  "input_sha256": {
+    "data/can_ph_lowdim_v15.hdf5": "3f2eb92e0a5025d0095e866ac16cc8092d6a762abe27dec90dbaff9027282962",
+    "reproduction/graduation_repairs_20261022_01/confirmation_starts.hdf5": "f2cf48e58146f3bbe4ef6360db237eea16a67487a07f46a6f307a4c18d392e13"
+  },
+  "error": "FileNotFoundError: [Errno 2] No such file or directory: 'C:\\\\Users\\\\Livio\\\\Desktop\\\\robot_can\\\\reproduction\\\\graduation_repairs_20261022_01\\\\confirmation\\\\source\\\\reproduction\\\\recovery_v5_20261012_01\\\\gripper_geometry.json'",
+  "finished_utc": "2026-10-22T02:13:22.588108+00:00"
+}

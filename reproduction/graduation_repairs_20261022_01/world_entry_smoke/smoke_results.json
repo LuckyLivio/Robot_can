@@ -1,0 +1,56 @@
+{
+  "purpose": "Engineering smoke only; two updates on old development data are not a new formal world-model result.",
+  "dataset": "queuepair_20261012_01_real",
+  "all_complete": true,
+  "matching_batch_hash": true,
+  "rows": [
+    {
+      "method": "plain",
+      "updates": 2,
+      "device": "cpu",
+      "selected_step": 1,
+      "mean_selection_criterion": 0.023886950037194765,
+      "criterion": "mean_regret",
+      "minibatch_sha256": "cbdc1bf5e2cab928960afdab63181c158303ce9c3d214823a686f2277988dbb6",
+      "model_sha256": "307f5ca433378073157ad46dd522e82fd584bbd67c53eee152c50c548a58190a",
+      "semantics": "legacy",
+      "status": "complete"
+    },
+    {
+      "method": "full",
+      "updates": 2,
+      "device": "cpu",
+      "selected_step": 1,
+      "mean_selection_criterion": 0.023886950037194765,
+      "criterion": "mean_regret",
+      "minibatch_sha256": "cbdc1bf5e2cab928960afdab63181c158303ce9c3d214823a686f2277988dbb6",
+      "model_sha256": "af6a46782be4efd1292110fd73fd66a34428012bf92f61e67db1b0ab68901e10",
+      "semantics": "legacy",
+      "status": "complete"
+    },
+    {
+      "method": "direct",
+      "updates": 2,
+      "device": "cpu",
+      "selected_step": 2,
+      "mean_selection_criterion": 0.016756548111516167,
+      "criterion": "mean_regret",
+      "minibatch_sha256": "cbdc1bf5e2cab928960afdab63181c158303ce9c3d214823a686f2277988dbb6",
+      "model_sha256": "0499dacb963dbe2aa44dfb51750d17d03c1ef3d07d916d41c9aa9b2864abbb54",
+      "semantics": "legacy",
+      "status": "complete"
+    },
+    {
+      "method": "prediction_only",
+      "updates": 2,
+      "device": "cpu",
+      "selected_step": 2,
+      "mean_selection_criterion": 0.1396368638328884,
+      "criterion": "normalized_state_mse",
+      "minibatch_sha256": "cbdc1bf5e2cab928960afdab63181c158303ce9c3d214823a686f2277988dbb6",
+      "model_sha256": "79e351b974223c028575d4a473308395444bd2db49540614c1a75651e91410e1",
+      "semantics": "legacy",
+      "status": "complete"
+    }
+  ]
+}

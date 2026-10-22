@@ -1,0 +1,44 @@
+{
+  "description": "Original project-specific PIL diagrams; not copied from reference thesis",
+  "width_px": 1900,
+  "minimum_font_px": 38,
+  "minimum_font_pt_at_16cm": 9.071,
+  "figures": [
+    {
+      "file": "architecture.png",
+      "width": 1900,
+      "height": 900,
+      "sha256": "a6f3bafa8294a532e0baf18f76189352231c7212c9f7def3f588aeef56be5361"
+    },
+    {
+      "file": "world_model.png",
+      "width": 1900,
+      "height": 870,
+      "sha256": "168d3aeea3b8d77c6b2224727bb76abb7e9745c8557447a04f19120b9dab2e34"
+    },
+    {
+      "file": "candidate_flow.png",
+      "width": 1900,
+      "height": 890,
+      "sha256": "09be0d500db0bf7ea216502a2738d63eda5450a9c4289a52026efd91c55a279d"
+    },
+    {
+      "file": "recovery_flow.png",
+      "width": 1900,
+      "height": 1085,
+      "sha256": "df5fb650283f169e6fe691ee0e136e7b42b7a15f9c4c49e4831bae12047ac151"
+    },
+    {
+      "file": "data_entities.png",
+      "width": 1900,
+      "height": 870,
+      "sha256": "58b9bdc4bae0de06eb1a9b684427a4c999a4e97bd8f1df2d37d5cbb3e3a6aab5"
+    },
+    {
+      "file": "control_sequence.png",
+      "width": 1900,
+      "height": 900,
+      "sha256": "8ccf61803049032ec744dcd591fbb45b73997a641a1cbfbae6efa8848cff1a02"
+    }
+  ]
+}

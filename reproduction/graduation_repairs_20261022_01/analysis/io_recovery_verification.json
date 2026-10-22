@@ -1,0 +1,40 @@
+{
+  "passed": true,
+  "frozen_control_model_data_unchanged": true,
+  "partial_failures_preserved": [
+    "queue_budget_full_s17_0",
+    "observation_legacy_0.05"
+  ],
+  "prefix_comparisons": [
+    {
+      "job_id": "queue_budget_full_s17_0",
+      "saved_result_records": 27,
+      "matched_control_prefix_steps": 3093,
+      "trace_complete_duplicate_episodes": 27,
+      "partial_trace_episodes": 0,
+      "saved_prefix_decisions_exact": true,
+      "timing_excluded_from_exact_comparison": true,
+      "archived_result_sha256": "cf8f4f2c022226bb7c62c05ff45ca02fc2bc90062c11998c6e7aa8dda8ae3ccc",
+      "archived_trace_sha256": "78e096d941fe47796e5c6da77799c30323385f661bba86cc87ce3e28ef4b9ea4",
+      "completed_retry_result_sha256": "af1683efa7ae7b37581ce8c7537b57e1a888bc39aadd71ca4655460dd7160e51"
+    },
+    {
+      "job_id": "observation_legacy_0.05",
+      "saved_result_records": 32,
+      "matched_control_prefix_steps": 4832,
+      "trace_complete_duplicate_episodes": 33,
+      "partial_trace_episodes": 0,
+      "saved_prefix_decisions_exact": true,
+      "timing_excluded_from_exact_comparison": true,
+      "archived_result_sha256": "b5c217f9f03aaaf172ef85750466d3ab0c14a4079e87966884533fa469ff3804",
+      "archived_trace_sha256": "9cfe76abb7a7abfae662387badae24433e10313f12b0706e671b0ad549d1735a",
+      "completed_retry_result_sha256": "c79d4e8e5f07cd80ea6747d34b4ab8a9d34fb0a78ce6b8e7ee4b62856b9df3d2"
+    }
+  ],
+  "extra_complete_duplicate_episodes": 60,
+  "extra_partial_trace_episodes": 0,
+  "registered_final_executions": 1680,
+  "independent_starts": 60,
+  "io_adapter_scope": "Atomic and retried persistence only; no decision/randomness/physics code changes.",
+  "finished_utc": "2026-10-22T02:11:38.467961+00:00"
+}

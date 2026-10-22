@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "finished_utc": "2026-10-22T01:45:38.035493+00:00",
+  "source_unchanged": true,
+  "episodes": 120,
+  "jobs": [
+    {
+      "id": "legacy_0.05",
+      "returncode": 0
+    },
+    {
+      "id": "legacy_0",
+      "returncode": 0
+    },
+    {
+      "id": "canonical_0",
+      "returncode": 0
+    },
+    {
+      "id": "canonical_0.05",
+      "returncode": 0
+    }
+  ],
+  "elapsed_s": 119.69046560000015
+}

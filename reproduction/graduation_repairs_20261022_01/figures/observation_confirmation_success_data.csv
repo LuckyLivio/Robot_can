@@ -1,0 +1,5 @@
+label,method,controller,observation_semantics,study_arm,noise,independent_starts,fixed_world_model_seeds,executions,successes,success_percent,color
+New legacy BC,bc,none,legacy,observation_confirmation,0.0,60,,60,53,88.33333333333333,#527EAA
+Canonical BC,bc,none,canonical,observation_confirmation,0.0,60,,60,52,86.66666666666667,#448B78
+New legacy BC,bc,none,legacy,observation_confirmation,0.05,60,,60,52,86.66666666666667,#527EAA
+Canonical BC,bc,none,canonical,observation_confirmation,0.05,60,,60,51,85.0,#448B78

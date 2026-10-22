@@ -1,0 +1,119 @@
+{
+  "scope": "Untracked regenerable Python bytecode outside virtual environments, Git, IDE and node_modules only",
+  "deleted_files": [
+    {
+      "path": "C:\\Users\\Livio\\Desktop\\robot_can\\robot_can_v2\\tests\\__pycache__\\__init__.cpython-310.pyc",
+      "relative": "robot_can_v2\\tests\\__pycache__\\__init__.cpython-310.pyc",
+      "bytes": 244,
+      "sha256": "C384A7B7C0F2165360F2ADF93D2CD956D4345FCA072E9587ADCA19BD9044002F"
+    },
+    {
+      "path": "C:\\Users\\Livio\\Desktop\\robot_can\\robot_can_v2\\tests\\__pycache__\\test_budget.cpython-310.pyc",
+      "relative": "robot_can_v2\\tests\\__pycache__\\test_budget.cpython-310.pyc",
+      "bytes": 7672,
+      "sha256": "D171EEDFD93CC349D0C01522249370777A06B04352AAEB94DCBB141A0FE7A897"
+    },
+    {
+      "path": "C:\\Users\\Livio\\Desktop\\robot_can\\robot_can_v2\\tests\\__pycache__\\test_evaluate.cpython-310.pyc",
+      "relative": "robot_can_v2\\tests\\__pycache__\\test_evaluate.cpython-310.pyc",
+      "bytes": 10010,
+      "sha256": "60DB22E717F715515235808507B63FA06D874C0E3E717FDE49EFC61D5162C9D8"
+    },
+    {
+      "path": "C:\\Users\\Livio\\Desktop\\robot_can\\robot_can_v2\\tests\\__pycache__\\test_observations.cpython-310.pyc",
+      "relative": "robot_can_v2\\tests\\__pycache__\\test_observations.cpython-310.pyc",
+      "bytes": 5643,
+      "sha256": "C9F53999A769212B3C4FF86B1D3526107AA7E730AF3F9A2308A4FC976CFBF6E9"
+    },
+    {
+      "path": "C:\\Users\\Livio\\Desktop\\robot_can\\robot_can_v2\\tests\\__pycache__\\test_policy_training.cpython-310.pyc",
+      "relative": "robot_can_v2\\tests\\__pycache__\\test_policy_training.cpython-310.pyc",
+      "bytes": 5391,
+      "sha256": "B5A475526F0D458458F99FFCCFF063F98FE445F650BBD8197341322D679AC8BB"
+    },
+    {
+      "path": "C:\\Users\\Livio\\Desktop\\robot_can\\robot_can_v2\\__pycache__\\__init__.cpython-310.pyc",
+      "relative": "robot_can_v2\\__pycache__\\__init__.cpython-310.pyc",
+      "bytes": 240,
+      "sha256": "6FC04AE6F105BC923CE3A4665EF7493947C11CFB071D81C13A9365853CCE6EB1"
+    },
+    {
+      "path": "C:\\Users\\Livio\\Desktop\\robot_can\\robot_can_v2\\__pycache__\\budget.cpython-310.pyc",
+      "relative": "robot_can_v2\\__pycache__\\budget.cpython-310.pyc",
+      "bytes": 11337,
+      "sha256": "DE50058B9D23DB4DFA55BA99989869CDBC6715FD03622CEB554B42ED88F6C46A"
+    },
+    {
+      "path": "C:\\Users\\Livio\\Desktop\\robot_can\\robot_can_v2\\__pycache__\\evaluate.cpython-310.pyc",
+      "relative": "robot_can_v2\\__pycache__\\evaluate.cpython-310.pyc",
+      "bytes": 10620,
+      "sha256": "9FBA0C0D09D29C1EBD57E9BD6048EC1A6182FA183A2417DB470016DD6ECDD32F"
+    },
+    {
+      "path": "C:\\Users\\Livio\\Desktop\\robot_can\\robot_can_v2\\__pycache__\\observations.cpython-310.pyc",
+      "relative": "robot_can_v2\\__pycache__\\observations.cpython-310.pyc",
+      "bytes": 5129,
+      "sha256": "FA3B3411F56117CDE7A82B7FB708315198451096C840D331BF09667B24CF35ED"
+    },
+    {
+      "path": "C:\\Users\\Livio\\Desktop\\robot_can\\robot_can_v2\\__pycache__\\train_policy.cpython-310.pyc",
+      "relative": "robot_can_v2\\__pycache__\\train_policy.cpython-310.pyc",
+      "bytes": 9243,
+      "sha256": "B617A1FBC9D93BCC1C88DCA78AAC8DF13BA4CD0F828EB2F9169333FA9C09B322"
+    },
+    {
+      "path": "C:\\Users\\Livio\\Desktop\\robot_can\\reproduction\\recovery_v5_20261012_01\\__pycache__\\clearance.cpython-310.pyc",
+      "relative": "reproduction\\recovery_v5_20261012_01\\__pycache__\\clearance.cpython-310.pyc",
+      "bytes": 2636,
+      "sha256": "53817E64696320CE5DB82AA284EFC267900C3C171EFC7BAC3A0C689252C2E597"
+    },
+    {
+      "path": "C:\\Users\\Livio\\Desktop\\robot_can\\reproduction\\recovery_v5_20261012_01\\__pycache__\\recovery_controller.cpython-310.pyc",
+      "relative": "reproduction\\recovery_v5_20261012_01\\__pycache__\\recovery_controller.cpython-310.pyc",
+      "bytes": 20666,
+      "sha256": "1BB70E12A7B85F11EA03350034F66B9B5F74E0FD7A622D2CC2320FEAA0A20DFF"
+    },
+    {
+      "path": "C:\\Users\\Livio\\Desktop\\robot_can\\__pycache__\\collect_branches.cpython-310.pyc",
+      "relative": "__pycache__\\collect_branches.cpython-310.pyc",
+      "bytes": 3628,
+      "sha256": "70A5FD6EB5CFFA89E85DC0A3CEB81D931789F14DFA7E2D559F70B21EE6B9D99C"
+    },
+    {
+      "path": "C:\\Users\\Livio\\Desktop\\robot_can\\__pycache__\\common.cpython-310.pyc",
+      "relative": "__pycache__\\common.cpython-310.pyc",
+      "bytes": 7708,
+      "sha256": "A293FFCB6615CC0582864BC40C2F3A9E4799FE5332AF75F592D1A66DAB485EFF"
+    },
+    {
+      "path": "C:\\Users\\Livio\\Desktop\\robot_can\\__pycache__\\common.cpython-311.pyc",
+      "relative": "__pycache__\\common.cpython-311.pyc",
+      "bytes": 14982,
+      "sha256": "580B9E88F1508AB9AC8015EA92402A851F4D5880E9C9332FED4A820F0A395E0F"
+    },
+    {
+      "path": "C:\\Users\\Livio\\Desktop\\robot_can\\__pycache__\\world_model.cpython-310.pyc",
+      "relative": "__pycache__\\world_model.cpython-310.pyc",
+      "bytes": 3973,
+      "sha256": "6E9F111215BF4D330F6E6F1DA152670BEB546CFDD3A3B4D9A1CD68E8CCCADF3E"
+    },
+    {
+      "path": "C:\\Users\\Livio\\Desktop\\robot_can\\__pycache__\\world_model.cpython-311.pyc",
+      "relative": "__pycache__\\world_model.cpython-311.pyc",
+      "bytes": 8995,
+      "sha256": "93728A565F33850B5BE3EFB1B940530CAC80D8186077893A90D9944B8715D0B4"
+    }
+  ],
+  "bytes_removed": 128117,
+  "excluded": [
+    "historical source",
+    "weights",
+    "datasets",
+    "results",
+    "logs",
+    "snapshots",
+    "archives",
+    "virtual environment",
+    "Git objects"
+  ]
+}

@@ -1,0 +1,5 @@
+job_id,method,world_model_seed,study_arm,controller,observation_semantics,noise,independent_starts,executions,successes,success_rate,mean_capped_steps,mean_steps_successful,stable_diagnostic_observed,stable_successes,stable_rate_all_evaluations,stable_rate_successful_evaluations,compute_samples,compute_over_50ms,compute_over_50ms_fraction
+legacy_0,bc,,recovery_factorial,none,legacy,0.0,30,30,22,0.7333333333333333,192.46666666666667,117.0,22,21,0.7,0.9545454545454546,5774,0,0.0
+legacy_0.05,bc,,recovery_factorial,none,legacy,0.05,30,30,25,0.8333333333333334,165.26666666666668,118.32,25,25,0.8333333333333334,1.0,4958,0,0.0
+canonical_0,bc,,recovery_factorial,none,canonical,0.0,30,30,25,0.8333333333333334,164.36666666666667,117.24,25,23,0.7666666666666667,0.92,4931,0,0.0
+canonical_0.05,bc,,recovery_factorial,none,canonical,0.05,30,30,26,0.8666666666666667,157.93333333333334,120.6923076923077,26,26,0.8666666666666667,1.0,4738,0,0.0

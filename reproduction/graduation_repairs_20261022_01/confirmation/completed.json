@@ -1,0 +1,154 @@
+{
+  "passed": true,
+  "finished_utc": "2026-10-22T02:11:38.468960+00:00",
+  "source_unchanged": true,
+  "episodes": 1680,
+  "jobs": [
+    {
+      "id": "none_bc_sNone_0",
+      "returncode": 0,
+      "attempts": 1
+    },
+    {
+      "id": "none_bc_sNone_0.05",
+      "returncode": 0,
+      "attempts": 1
+    },
+    {
+      "id": "none_full_s17_0",
+      "returncode": 0,
+      "attempts": 1
+    },
+    {
+      "id": "none_full_s17_0.05",
+      "returncode": 0,
+      "attempts": 1
+    },
+    {
+      "id": "none_full_s23_0",
+      "returncode": 0,
+      "attempts": 1
+    },
+    {
+      "id": "none_full_s23_0.05",
+      "returncode": 0,
+      "attempts": 1
+    },
+    {
+      "id": "none_full_s41_0",
+      "returncode": 0,
+      "attempts": 1
+    },
+    {
+      "id": "none_full_s41_0.05",
+      "returncode": 0,
+      "attempts": 1
+    },
+    {
+      "id": "v5_bc_sNone_0",
+      "returncode": 0,
+      "attempts": 1
+    },
+    {
+      "id": "v5_bc_sNone_0.05",
+      "returncode": 0,
+      "attempts": 1
+    },
+    {
+      "id": "v5_full_s17_0",
+      "returncode": 0,
+      "attempts": 1
+    },
+    {
+      "id": "v5_full_s17_0.05",
+      "returncode": 0,
+      "attempts": 1
+    },
+    {
+      "id": "v5_full_s23_0",
+      "returncode": 0,
+      "attempts": 1
+    },
+    {
+      "id": "v5_full_s23_0.05",
+      "returncode": 0,
+      "attempts": 1
+    },
+    {
+      "id": "v5_full_s41_0",
+      "returncode": 0,
+      "attempts": 1
+    },
+    {
+      "id": "v5_full_s41_0.05",
+      "returncode": 0,
+      "attempts": 1
+    },
+    {
+      "id": "queue_budget_bc_sNone_0",
+      "returncode": 0,
+      "attempts": 1
+    },
+    {
+      "id": "queue_budget_bc_sNone_0.05",
+      "returncode": 0,
+      "attempts": 1
+    },
+    {
+      "id": "queue_budget_full_s17_0",
+      "returncode": 0,
+      "attempts": 2
+    },
+    {
+      "id": "queue_budget_full_s17_0.05",
+      "returncode": 0,
+      "attempts": 1
+    },
+    {
+      "id": "queue_budget_full_s23_0",
+      "returncode": 0,
+      "attempts": 1
+    },
+    {
+      "id": "queue_budget_full_s23_0.05",
+      "returncode": 0,
+      "attempts": 1
+    },
+    {
+      "id": "queue_budget_full_s41_0",
+      "returncode": 0,
+      "attempts": 1
+    },
+    {
+      "id": "queue_budget_full_s41_0.05",
+      "returncode": 0,
+      "attempts": 1
+    },
+    {
+      "id": "observation_legacy_0",
+      "returncode": 0,
+      "attempts": 1
+    },
+    {
+      "id": "observation_legacy_0.05",
+      "returncode": 0,
+      "attempts": 2
+    },
+    {
+      "id": "observation_canonical_0",
+      "returncode": 0,
+      "attempts": 1
+    },
+    {
+      "id": "observation_canonical_0.05",
+      "returncode": 0,
+      "attempts": 1
+    }
+  ],
+  "elapsed_s": 824.3161679999998,
+  "initial_failed_receipt": "reproduction/graduation_repairs_20261022_01/failed_attempts/batch_completed_initial.json",
+  "io_recovery_receipt": "reproduction/graduation_repairs_20261022_01/analysis/io_recovery_verification.json",
+  "extra_complete_duplicate_episodes": 60,
+  "extra_partial_trace_episodes": 0,
+  "elapsed_scope": "elapsed_s retains original failed batch wall time; rerun overhead is separate"
+}

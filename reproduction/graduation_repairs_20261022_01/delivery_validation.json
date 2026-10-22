@@ -1,0 +1,96 @@
+{
+  "passed": true,
+  "utc": "2026-10-22T02:18:55.318920+00:00",
+  "script_sha256": "5e9472d24d1252c75cace9435408d30fd5eb05409e999a240d2e8cf0d367c7c3",
+  "errors": [],
+  "documents_sha256": {
+    "README.md": "0104dd17a2af6e64c77f0777cccfe4ffc25724080bad7c84aec2b6fe2ee6c2ed",
+    "STATUS.md": "9db458b9c81511e240b7afaba8b43d7d046f76b2d168e1c0e57bd8021a12d748",
+    "RESULTS.md": "9df561f728c93f2334cbd324662e3fda7f00522643d217ee63dcc8f70a0d35f8",
+    "PROJECT_NAVIGATION.md": "68d3c72bf9b8aebe180d74b790e31f5baec44a312c86d5aeaa8290e1a1e3f1c3",
+    "PROGRAM_GUIDE.md": "6280b148d7cb72d943ee5c2aff6109853466ba4c04802cc4765d628b8879e432",
+    "DEMO_GUIDE.md": "a380bdda4dead5ac50a19ae3656669293e7e6ea0f71bdbcee692ab245f056837",
+    "EVIDENCE_INDEX.md": "436da24f2491e996033a7c6f22cad21da05edd898c288104477dede473a28499",
+    "PROJECT_AUDIT.md": "85da956b6b6893c1866b910b570d87e3d0ba8c8b1c2e475f3cf278ac8ccadc3d",
+    "ENVIRONMENT_GUIDE.md": "f854e67bab3e9ac18b50c7a7f85eeb44b3a983a78e43839029e5577240bd9ad4",
+    "PROTOCOL.md": "6e9e0a1b855c155df09ce4aed75a7e73bf800dd23c3529999d96a7a1aec96653",
+    "index.html": "c9677b92517ed0b51f4bf249669d10e7a62697f828cce2ac540ea0d0a44621ef",
+    "reproduction/graduation_repairs_20261022_01/REPORT.md": "97fe413b0fa514bd5cced6955c939b050d1bcbcecbaf4e0fd0db3577d388bb31",
+    "reproduction/graduation_repairs_20261022_01/METHODS.md": "b0d75422a1562c94b3f323e108405e1dd274dd8583e26775a82ca2b9ba8e5956",
+    "reproduction/graduation_repairs_20261022_01/index.html": "0b94e0ed4920a6743b55af1064f498a1e9524e44abc82e6dff4d5c609fc54c21",
+    "robot_can_v2/README.md": "95fcd1d74250181336abcbc025e9075e1a7ded33aec872b67b5ed4fb05412691"
+  },
+  "local_links_checked": 90,
+  "http_responses": [
+    {
+      "resource": "index.html",
+      "status": 200,
+      "bytes": 259
+    },
+    {
+      "resource": "reproduction/graduation_repairs_20261022_01/index.html",
+      "status": 200,
+      "bytes": 3904
+    },
+    {
+      "resource": "reproduction/graduation_repairs_20261022_01/REPORT.md",
+      "status": 200,
+      "bytes": 6485
+    },
+    {
+      "resource": "reproduction/graduation_repairs_20261022_01/analysis/confirmation/summary.json",
+      "status": 200,
+      "bytes": 227245
+    },
+    {
+      "resource": "reproduction/graduation_repairs_20261022_01/figures/recovery_factorial_success.png",
+      "status": 200,
+      "bytes": 218346
+    },
+    {
+      "resource": "reproduction/graduation_repairs_20261022_01/figures/recovery_factorial_effects.png",
+      "status": 200,
+      "bytes": 260650
+    },
+    {
+      "resource": "reproduction/graduation_repairs_20261022_01/figures/observation_confirmation_success.png",
+      "status": 200,
+      "bytes": 193000
+    },
+    {
+      "resource": "reproduction/graduation_repairs_20261022_01/figures/queue_budget_candidate_effects.png",
+      "status": 200,
+      "bytes": 221355
+    }
+  ],
+  "figure_bundles": 10,
+  "visual_inspection_scope": [
+    "recovery_factorial_success.png",
+    "observation_confirmation_effects.png",
+    "queue_budget_candidate_effects.png"
+  ],
+  "visual_scope_note": "These three PNGs were inspected with view_image; HTTP/hash checks are not browser rendering or PDF layout verification.",
+  "verification_receipts": {
+    "preservation_check.json": {
+      "passed": true,
+      "sha256": "0d2c64a0e289230cef336b354a441e405bb2c08cf43e66adcd324b436e0d2e0d"
+    },
+    "confirmation_state_validation.json": {
+      "passed": true,
+      "sha256": "f1aa7a79238b8396f162f9b6a2f59afc3335d2a2ede22cbe3eac71cf85270994"
+    },
+    "analysis/confirmation_trace_verification.json": {
+      "passed": true,
+      "sha256": "53ba304b00df8717f67d7071d798812f729e15a2f5569230cc67d11c9fe4ed68"
+    },
+    "analysis/confirmation_physics_replay.json": {
+      "passed": true,
+      "sha256": "2adf2042d5a3150d754640c226543bffc127b8858a141f841a4d95c0466bcd07"
+    },
+    "analysis/io_recovery_verification.json": {
+      "passed": true,
+      "sha256": "9e8e1f7c1744336f180953c84beb0df3cc5e896731ea62938e63484af76aa8f9"
+    }
+  },
+  "tests_note": "58 unit/regression tests previously passed before the frozen confirmation; this script does not rerun them or simulate new episodes."
+}

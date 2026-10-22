@@ -1,0 +1,112 @@
+{
+  "review_date_Asia_Shanghai": "2026-10-22",
+  "status": "read_only_protocol_review",
+  "scope": "Reviewed the locked prospective design, jobs, state validation, frozen inference code and statistical analysis while the 1680-execution batch was running. No confirmation outcomes were used to choose methods or revise criteria. No simulator was run and no frozen source was changed.",
+  "critical_findings": [],
+  "verified": {
+    "confirmation_lock_files_checked": 52,
+    "all_locked_hashes_match": true,
+    "registered_jobs": 28,
+    "registered_executions": 1680,
+    "distinct_registered_physical_starts": 60,
+    "recovery_factorial_jobs": 24,
+    "recovery_factorial_executions": 1440,
+    "primary_none_v5_factorial_executions": 960,
+    "additional_queue_candidate_executions": 480,
+    "observation_confirmation_jobs": 4,
+    "observation_confirmation_executions": 240,
+    "all_jobs_same_ordered_60_starts": true,
+    "all_jobs_D2_400_controls": true,
+    "state_hashes_match_saved_hdf5": true,
+    "native_seed_regeneration_exact": true,
+    "old_start_states_compared": 621,
+    "minimum_reported_max_absolute_distance_to_old_starts": 0.02732934490341769,
+    "historical_BC_and_WM_use_legacy_inputs": true,
+    "new_BC_online_semantics_match_checkpoint": true,
+    "all_BC_checkpoints_dim23_horizon8": true,
+    "matched_new_BC_initialization_hashes_equal": true,
+    "matched_new_BC_minibatch_hashes_equal": true,
+    "matched_new_BC_confirmation_checkpoint": "prospectively selected final update15000, not best-dev or best-success selection",
+    "bootstrap_draws": 20000,
+    "bootstrap_seed": 20261022,
+    "bootstrap_unit": "physical start/demo, with matched conditions retained together",
+    "world_model_seeds_averaged_within_start_before_resampling": [17, 23, 41],
+    "joint_noise_contrasts_weight_each_noise_equally_within_start": true,
+    "new_legacy_BC_never_pooled_with_historical_frozen_BC": true,
+    "diagnostic_settling_excluded_from_benchmark_steps_and_compute_counts": true
+  },
+  "development_evidence": {
+    "observation_independent_starts": 30,
+    "legacy_successes_out_of60_condition_executions": 47,
+    "canonical_successes_out_of60_condition_executions": 51,
+    "joint_canonical_minus_legacy_percentage_points": 6.666666666666667,
+    "paired_start_ci95_percentage_points": [-3.3333333333333335, 20.0],
+    "budget_parent_successes_out_of120_condition_executions": 119,
+    "budget_candidate_successes_out_of120_condition_executions": 119,
+    "budget_registered_gate_passed": true,
+    "budget_has_positive_evidence": false,
+    "budget_rescued_distinct_starts": 0,
+    "budget_regressed_condition_executions": 0
+  },
+  "reporting_requirements": [
+    {
+      "topic": "Samples versus executions",
+      "instruction": "Report 30 reused development starts and 60 fresh confirmation starts. The 1680 executions share 60 physical starts and are not 1680 independent samples."
+    },
+    {
+      "topic": "Candidate eligibility versus adoption",
+      "instruction": "The queue candidate passed the original development safety gate with identical success outcomes. This permitted prospective confirmation but supplied no positive development performance evidence. Do not call the gate pass an improvement."
+    },
+    {
+      "topic": "Null results",
+      "instruction": "If the candidate has no observed confirmation benefit, retain that null result and keep the frozen v5 as the established primary controller. An all-zero paired empirical effect and bootstrap interval [0,0] do not prove population equivalence or universal absence of an effect."
+    },
+    {
+      "topic": "Pointwise uncertainty",
+      "instruction": "Intervals are pointwise 95 percent paired-start percentile intervals without multiplicity correction. They condition on the fixed policies and WM seeds, and do not estimate retraining uncertainty. The observation treatment has only one paired training seed17."
+    },
+    {
+      "topic": "Factorial attribution",
+      "instruction": "Use BC recovery effects, WM-seed-averaged Full recovery effects, and their difference-in-differences interaction. Pooled recovery-factorial success totals include three WM seeds for every fixed BC and are bookkeeping totals rather than one balanced policy performance estimate."
+    },
+    {
+      "topic": "Separate policy arms",
+      "instruction": "The new legacy/canonical BC pair belongs only to observation_confirmation. The recovery_factorial arm uses the historical BC checkpoint. Never treat their legacy observations as evidence that the policies are identical or pool their baselines."
+    },
+    {
+      "topic": "Meaning of the observation correction",
+      "instruction": "The canonical treatment recomputes same-frame relative geometry and normalizes quaternions with a deterministic relative sign. Its closed-loop contrast tests this combined observation contract, not an isolated causal effect of only the original first-frame anomaly."
+    },
+    {
+      "topic": "Training endpoints",
+      "instruction": "Both matched policies selected the lowest recorded dev NLL at update1000, while the prospectively specified confirmation uses update15000. Final dev NLL is worse for both. This is a fixed-budget comparison, not evidence that the final policies optimize dev likelihood. Do not switch checkpoints after seeing confirmation outcomes."
+    },
+    {
+      "topic": "Stable placement",
+      "instruction": "Report the 20-control settling diagnostic separately, with both all-evaluation and successful-evaluation denominators. It is approximately one second at20Hz and does not establish arbitrarily long stable placement."
+    },
+    {
+      "topic": "Timing",
+      "instruction": "Compute timing covers observation packing, policy, optional WM, and supervisor. Physics, JSON logging and deployment communication are outside this timer; concurrent evaluations affect the distribution. Do not claim full-system20Hz real-time deployment from these counts."
+    },
+    {
+      "topic": "Input and deployment scope",
+      "instruction": "The experiments use privileged23D simulation state plus fixed task geometry. They do not validate RGB perception, physical robot deployment or an unobserved object-pose estimator."
+    },
+    {
+      "topic": "World-model and innovation claims",
+      "instruction": "The factorial uses existing frozen WM weights, while the new queue budget is an observation-history and FIFO-based timing heuristic. Source fixes and corrected ranking diagnostics do not by themselves prove a new WM training improvement or establish literature novelty."
+    }
+  ],
+  "evidence_files": [
+    "confirmation_design.json",
+    "confirmation_jobs.json",
+    "confirmation_lock.json",
+    "confirmation_state_validation.json",
+    "CONFIRMATION_AMENDMENT.md",
+    "analysis/dev_observations/summary.json",
+    "analysis/dev_budget/summary.json",
+    "policies/legacy_s17/summary.json",
+    "policies/canonical_s17/summary.json"
+  ]
+}

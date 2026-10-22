@@ -1,0 +1,36 @@
+{
+  "date_local": "2026-10-22",
+  "scope": "Fresh executions in this turn. Smoke is bounded restoration/branch simulation, not policy confirmation.",
+  "outputs": {
+    "v21_integrity": {
+      "status": "fulfilled",
+      "value": {
+        "chunk_id": "c51b96",
+        "wall_time_seconds": 0.0000096,
+        "exit_code": 0,
+        "original_token_count": 119,
+        "output": "{\"passed\": true, \"preserved_prior_paths\": 14035, \"backed_up_active_documents\": 9, \"delivery_files\": 294, \"old_code_weights_results_unchanged\": true, \"completed_stages\": {\"smoke_a\": 54}, \"completed_evaluation_executions\": 54, \"partial_failed_stage_episodes\": 0, \"independent_confirmation_starts\": 0, \"confirmation_start_count_scope\": \"Distinct dataset/demo identities in the separately locked confirmation jobs; not action or physical replay counts.\", \"new_training_runs\": 0}\r\n"
+      }
+    },
+    "environment_smoke": {
+      "status": "fulfilled",
+      "value": {
+        "chunk_id": "08e771",
+        "wall_time_seconds": 0.0000124,
+        "exit_code": 0,
+        "original_token_count": 473,
+        "output": "[robosuite WARNING] Could not import robosuite_models. Some robots may not be available. If you want to use these robots, please install robosuite_models from source (https://github.com/ARISE-Initiative/robosuite_models) or through pip install. (__init__.py:30)\r\n[robosuite WARNING] Could not load the mink-based whole-body IK. Make sure you install related import properly, otherwise you will not be able to use the default IK controller setting for GR1 robot. (__init__.py:40)\r\n{\"demo\": \"demo_0\", \"initial_max_error\": 1.9721664190292358, \"initial_direct_max_error\": 2.655495567882582e-08, \"initial_geometry_max_error\": 8.296474418578725e-08, \"40_step_max_error\": 1.9473996758460999, \"branch_checks\": [{\"index\": 20, \"initial_repeat_max_error\": 0.0, \"controller_repeat_max_error\": 0.0, \"geometry_max_error\": 4.355539590106261e-07, \"zero_prefix_max_error\": 0.0, \"reverse_repeat_max_error\": 0.0, \"xml_repeat_max_error\": 0.0}, {\"index\": 90, \"initial_repeat_max_error\": 0.0, \"controller_repeat_max_error\": 0.0, \"geometry_max_error\": 2.96792958209835e-07, \"zero_prefix_max_error\": 0.0, \"reverse_repeat_max_error\": 0.0, \"xml_repeat_max_error\": 0.0}]}\r\n{\"demo\": \"demo_1\", \"initial_max_error\": 0.8443051135079982, \"initial_direct_max_error\": 2.3097922685622052e-08, \"initial_geometry_max_error\": 1.2656866754667817e-07, \"40_step_max_error\": 0.008495510052850985, \"branch_checks\": [{\"index\": 20, \"initial_repeat_max_error\": 0.0, \"controller_repeat_max_error\": 0.0, \"geometry_max_error\": 3.6216228427310426e-07, \"zero_prefix_max_error\": 0.0, \"reverse_repeat_max_error\": 0.0, \"xml_repeat_max_error\": 0.0}, {\"index\": 90, \"initial_repeat_max_error\": 0.0, \"controller_repeat_max_error\": 0.0, \"geometry_max_error\": 9.065674966279857e-08, \"zero_prefix_max_error\": 0.0, \"reverse_repeat_max_error\": 0.0, \"xml_repeat_max_error\": 0.0}]}\r\n{\"checks_passed\": true, \"elapsed_s\": 14.651138000000003, \"report\": null}\r\n"
+      }
+    },
+    "pip_check": {
+      "status": "fulfilled",
+      "value": {
+        "chunk_id": "fa35f0",
+        "wall_time_seconds": 2.7736073,
+        "exit_code": 0,
+        "original_token_count": 8,
+        "output": "No broken requirements found.\r\n"
+      }
+    }
+  }
+}

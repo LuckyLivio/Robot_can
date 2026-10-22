@@ -1,0 +1,24 @@
+{
+  "generated_utc": "2026-10-22T02:14:33.440337+00:00",
+  "navigation_updated": [
+    "README.md",
+    "STATUS.md",
+    "RESULTS.md",
+    "PROJECT_NAVIGATION.md",
+    "PROGRAM_GUIDE.md",
+    "DEMO_GUIDE.md",
+    "EVIDENCE_INDEX.md",
+    "PROJECT_AUDIT.md",
+    "ENVIRONMENT_GUIDE.md",
+    "PROTOCOL.md",
+    "index.html"
+  ],
+  "original_navigation_preserved": true,
+  "research_executions": 2040,
+  "confirmation_executions": 1680,
+  "independent_confirmation_starts": 60,
+  "extra_complete_duplicate_episodes": 60,
+  "registered_plus_duplicate_executions": 2100,
+  "paper_written": false,
+  "budget_candidate_auto_adopted": false
+}

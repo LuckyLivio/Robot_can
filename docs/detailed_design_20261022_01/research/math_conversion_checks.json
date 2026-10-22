@@ -1,0 +1,839 @@
+{
+  "scope": "Unconverted command and minus preservation checks; visual inspection remains required.",
+  "checks": [
+    {
+      "latex": "T_{rel}=T_e^{-1}T_o",
+      "source_minus_count": 1,
+      "office_minus_count": 1,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "p_{rel}=R(q_e)^{T}(p_o-p_e),\\qquad q_{rel}=q_e^{-1}\\otimes q_o",
+      "source_minus_count": 2,
+      "office_minus_count": 2,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "z=(x-\\mu)/s,\\qquad \\hat{x}=\\hat{z}\\odot s+\\mu",
+      "source_minus_count": 1,
+      "office_minus_count": 1,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "t",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "x_t\\in\\mathbb R^{23}",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "xyzw",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "T",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "H",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "\\mathcal D_{BC}^{(e)}=\n\\left\\{\\left(x_t,A_t\\right)\\mid 0\\leq t\\leq T-H\\right\\},\n\\qquad\nA_t=[a_t,a_{t+1},\\ldots,a_{t+H-1}]\\in\\mathbb R^{H\\times7}.",
+      "source_minus_count": 2,
+      "office_minus_count": 2,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "e",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "A_t",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "H",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "H=8",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "\\tilde x_{td}=\\frac{x_{td}-\\mu_d}{s_d},\n\\qquad s_d=\\max\\{\\operatorname{Std}_{train}(x_d),0.02\\}.",
+      "source_minus_count": 1,
+      "office_minus_count": 1,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "d",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "\\mu_d",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "s_d",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "K=5",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "H\\times7",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "B\\times23",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "B\\times512",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "B\\times K",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "B\\times K\\times H\\times7",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "B\\times H\\times7",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "l_k,v_{khd},w_{khd}",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "\\pi_k=\\operatorname{softmax}(l)_k,\\quad\nm_{khd}=\\tanh(v_{khd}),\\quad\n\\sigma_{khd}=\\operatorname{clip}\\!\\left(\\operatorname{softplus}(w_{khd}),0.02,1\\right).",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "h",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "d",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "K(1+2H\\cdot7)=565",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "p_\\theta(A\\mid x)=\n\\sum_{k=1}^{K}\\pi_k(x)\n\\prod_{h=0}^{H-1}\\prod_{d=1}^{7}\n\\mathcal N\\!\\left(A_{hd};m_{khd}(x),\\sigma_{khd}^{2}(x)\\right).",
+      "source_minus_count": 1,
+      "office_minus_count": 1,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "\\mathcal L_{BC}=-\\frac{1}{BH7}\n\\sum_{b=1}^{B}\\log p_\\theta(A^{(b)}\\mid x^{(b)}).",
+      "source_minus_count": 1,
+      "office_minus_count": 1,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "k_t=\\arg\\max_k l_k(x_t),\\qquad\n\\bar A_t=m_{k_t}(x_t)\\in[-1,1]^{8\\times7}.",
+      "source_minus_count": 1,
+      "office_minus_count": 1,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "j",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "z_j\\in\\mathbb R^{23}",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "h_j\\in\\mathbb R^{128}",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "U\\in\\mathbb R^{H\\times7}",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "z_0=(x_t-\\mu)/s,\\qquad h_0=\\tanh(W_i z_0+b_i),",
+      "source_minus_count": 1,
+      "office_minus_count": 1,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "h_{j+1}=\\operatorname{GRUCell}([z_j,u_j],h_j),\\qquad\nz_{j+1}=z_j+0.1f_\\Delta(h_{j+1}),\\qquad\n\\hat x_{t+j+1}=s\\odot z_{j+1}+\\mu.",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "[\\cdot,\\cdot]",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "f_\\Delta",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "\\odot",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "z_{j+1}",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "[z,h]",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "10^{-7}",
+      "source_minus_count": 1,
+      "office_minus_count": 1,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "p_j^*",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "r_j^*",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "\\hat p_j",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "\\hat r_j",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "S=\\hat p_H+\\frac{0.5}{H}\\sum_{j=1}^{H}\\hat p_j-\\rho\\max_{1\\leq j\\leq H}\\hat r_j,\n\\qquad \\rho=0.5.",
+      "source_minus_count": 1,
+      "office_minus_count": 1,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "S^*",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "\\mathcal L_{pred}=\\operatorname{Mean}_{b,k,j,d}\n\\left[\\left(\\frac{\\hat x_{bkjd}-x^*_{bkjd}}{s_d}\\right)^2\\right].",
+      "source_minus_count": 1,
+      "office_minus_count": 1,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "\\mathcal L_p=\\operatorname{BCEWithLogits}(\\ell_p,p^*).",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "\\mathcal L_r=\\operatorname{BCEWithLogits}(\\ell_r,r^*).",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "b,k,j,d",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "s_d",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "\\mathcal M",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "\\mathcal L_{rank}=\\operatorname{Mean}_{(i,j)\\in\\mathcal M}\n\\operatorname{softplus}\\!\\left[\n-\\frac{\\operatorname{sign}(S_i^*-S_j^*)(S_i-S_j)}{0.1}\n\\right],",
+      "source_minus_count": 3,
+      "office_minus_count": 3,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "\\mathcal L_{Full}=\\mathcal L_{pred}+\\mathcal L_p+0.5\\mathcal L_r+0.2\\mathcal L_{rank}.",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "Q_t=[q_t^0,\\ldots,q_t^{D-1}]",
+      "source_minus_count": 1,
+      "office_minus_count": 1,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "c",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "q_t^0",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "U_t(c)=\\left[q_t^0,\\ldots,q_t^{D-1},c,c,\\ldots,c\\right]_{H\\ \\mathrm{steps}},\\qquad H>D.",
+      "source_minus_count": 1,
+      "office_minus_count": 1,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "c_k=\\bar A_t[k]",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "k\\in\\{0,1,2,3\\}",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "k^{raw}=\\arg\\max_{k\\in\\{0,1,2,3\\}}S_k,\\qquad\nk^{sel}=\\begin{cases}\n2,&k^{raw}\\neq2\\ \\land\\ S_{k^{raw}}-S_2<0.02,\\\\\nk^{raw},&\\text{其他情况}.\n\\end{cases}",
+      "source_minus_count": 1,
+      "office_minus_count": 1,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "J=C_{physical}-wS",
+      "source_minus_count": 1,
+      "office_minus_count": 1,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "w=0.02",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "w=0",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "10^{-8}",
+      "source_minus_count": 1,
+      "office_minus_count": 1,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "x_t",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "u_t",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "Q_t=[q_t^{(0)},q_t^{(1)}]",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "a_t=q_t^{(0)},\\qquad Q_{t+1}=[q_t^{(1)},u_t].",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "u_t",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "B_t",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "p_e",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "p_o",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "g=|x_7-x_8|",
+      "source_minus_count": 1,
+      "office_minus_count": 1,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "r=p_e-p_o",
+      "source_minus_count": 1,
+      "office_minus_count": 1,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "r",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "p_{rel}",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "r",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "-0.24<x_o<0.45",
+      "source_minus_count": 1,
+      "office_minus_count": 1,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "-0.57<y_o<0.57",
+      "source_minus_count": 1,
+      "office_minus_count": 1,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "z_o>z_{floor}-0.04",
+      "source_minus_count": 1,
+      "office_minus_count": 1,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "D=2",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "z_f",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "p_g",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "b",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "\\max(z_f+0.20,z_e)",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "D+5",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "\\max(z_f+0.20,z_o+0.14)",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "D+5",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "p_g",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "D+5",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "16+D",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "D+5",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "z_f+0.28",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "b",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "D+5",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "z_f+0.085",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "D+5",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "z_f+0.10",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "14+D",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "D+5",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "\\delta p=0.5(p_{goal}-p_e),\\qquad\n\\delta r=0.5\\operatorname{Log}(R_{goal}R_e^\\top).",
+      "source_minus_count": 1,
+      "office_minus_count": 1,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "p_a",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "d_{xy}",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "A=\\left\\lceil\\frac{\\|p_a-p_e\\|}{0.012}\\right\\rceil+8,\\qquad\nT=\\left\\lceil\\frac{d_{xy}}{0.010}\\right\\rceil+10.",
+      "source_minus_count": 1,
+      "office_minus_count": 1,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "T+40",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "25+T+40",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "A+70+T+40+50",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "d_i",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "n",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "m=\\operatorname{median}_i\\|d_i\\|,\\qquad\ng=\\operatorname{median}_i(d_i^\\top n).",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "m",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "g",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "v=\\operatorname{clip}\\left(\n\\begin{cases}\n0.012,&N<4,\\\\\n0.006+0.5\\max(0,g),&N\\ge4,\n\\end{cases}\n0.006,0.020\\right).",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "c",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "m",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "v",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "w_j",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "w_0",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "d_j",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "R_{raw}=\\sum_j\\max\\left(d_j,\\frac{\\|w_j-w_{j-1}\\|}{v}\\right)+R_{retry}.",
+      "source_minus_count": 2,
+      "office_minus_count": 2,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "R_{retry}=50",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "R_b=\\operatorname{clip}(R_{raw},\\max(0,R_{v5}-25),R_{v5}+50).",
+      "source_minus_count": 1,
+      "office_minus_count": 1,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "c",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "q",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "w_*",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "\\Delta R_q=\\frac{\\|w_*-(p_e+q)\\|-\\|w_*-p_e\\|}{v}.",
+      "source_minus_count": 3,
+      "office_minus_count": 3,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "\\widehat R=\\operatorname{clip}\\left(\\left\\lceil R_b+R_{wait}+\\Delta R_q\\right\\rceil,0,400\\right),\n\\qquad R_{wait}=2.",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "R_{wait}=0",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "2\\times7",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "R_b",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "\\widehat R",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "SR=\\frac{1}{N}\\sum_{i=1}^{N}Y_i",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "d_i^{BC}=\\bar{Y}_{i,BC,v5}-\\bar{Y}_{i,BC,none},\\qquad d_i^{Full}=\\bar{Y}_{i,Full,v5}-\\bar{Y}_{i,Full,none}",
+      "source_minus_count": 2,
+      "office_minus_count": 2,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "I_i=d_i^{Full}-d_i^{BC}",
+      "source_minus_count": 1,
+      "office_minus_count": 1,
+      "unconverted_commands": false
+    }
+  ]
+}

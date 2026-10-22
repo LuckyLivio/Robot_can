@@ -1,0 +1,212 @@
+{
+  "title": "基于世界模型的机器人抓取搬运系统设计与实现",
+  "built_utc": "2026-10-22T05:12:28.952974+00:00",
+  "scope": "Standalone Chapter 4 detailed design; no abstract, introduction, full evaluation chapter or appendices",
+  "reference_pdf_sha256": "7955c52863ef1dd4f50bd1d6ad794ebe50864a6b6946029be3921670e3b51c9d",
+  "reference_scope": "PDF pages 22-35, printed 15-28; architecture, functions, data and interfaces only",
+  "original_52_page_version_preserved": true,
+  "cjk_characters": 5773,
+  "numbered_equations": 6,
+  "office_math_objects": 26,
+  "tables": 6,
+  "figures": 6,
+  "references": 6,
+  "layout_profile": {
+    "heading_1": "16pt SimHei centered; one line before and after",
+    "heading_2": "14pt SimHei, one space, 1.5 lines",
+    "heading_3_4": "12pt SimSun, two spaces, 1.5 lines",
+    "body": "12pt SimSun / Times New Roman, firstLineChars=200, 1.5 lines",
+    "body_references": "native superscript; bibliography labels on baseline"
+  },
+  "sources_sha256": {
+    "docs/world_model_design_20261022_01/详细设计.md": "6b99115bd78fb50009d0166ba9925104d71742ab7d2c4fd63e7fd44082bf1722",
+    "docs/world_model_design_20261022_01/build_word.py": "36ad7f87ee5558a723f85d1ab472b6abcb3f1c3abb37f05d464a03ae8784d21a",
+    "docs/detailed_design_20261022_01/build_design.py": "acffd5790e8a10f3ff09c8ca8c1c685d083818cf8bf97a40d7505ed752e9a8c5",
+    "docs/detailed_design_20261022_01/research/references_verified.json": "7530ab510e99b43f3ba0415ab7cdfb32cfa5735c6dc6c075649fbffe603455a8",
+    "common.py": "7618e9b1e05407d97727001ecc8f012ecca4876bccb423368f8d90500e8a5db0",
+    "world_model.py": "ac82be1227b91e43da2df0cbb4cdfe35494068147ee9ec99bc526383bdf1946a",
+    "robot_can_v2/observations.py": "1f905faa4f02e4cf0246560bad0f8e1235423a814f60872e54b815be3f2f7aa8",
+    "robot_can_v2/evaluate.py": "2f9495e930797af432de30af11b9ec190a20999027df3ebeac559ea414023cf0",
+    "robot_can_v2/train_world.py": "3fd1d817a1a152e799c02102870ca723f5e171ebb474e34cb09bc91a379f6eab",
+    "robot_can_v2/train_policy.py": "29b3dbb832b984398762589b41f5d3515b63daeecdb9f1e113ff399b28ae0a2e",
+    "train_policy.py": "e1537c5eaec2c49c2bdd5b99f166d3823cecf7f31dba3e0a2095139b59b92212",
+    "collect_rollout_branches.py": "134567dce9fd58a395789a4da07b0b0178fa9d1aface607b14f31d6955bb1099",
+    "collect_branches.py": "204f38acd87df3b88d91f8ff31b0e3df94d07aa3b8742383917e974454db8f4b",
+    "reproduction/multiseed_20261012_01/train_suite.py": "2720d2f9ef03b2b6a7595750ea185ca53789303407b89c35bd19fec138256094",
+    "models/multiseed_20261012_01_full_s17/config.json": "b971162a7f46889aaefba876da0e8ac3172fb60f1932551b88811ddee40dd2c7",
+    "models/multiseed_20261012_01_full_s23/config.json": "23b0b43bb40eedc2e6a74ddf518dda312ccc35c8ba97cd8feb8e08b75f786fa3",
+    "models/multiseed_20261012_01_full_s41/config.json": "52dd2363158bded361078152a961113823b8aa6fce5c7deeb4ebfd188a367eab",
+    "reproduction/recovery_v5_20261012_01/recovery_controller.py": "88ee635f5cefbe30927d549910a5237b82f8275c0ea88da273874c4e7b637ecf"
+  },
+  "image_sha256": {
+    "assets/architecture.png": "a6f3bafa8294a532e0baf18f76189352231c7212c9f7def3f588aeef56be5361",
+    "assets/world_model.png": "168d3aeea3b8d77c6b2224727bb76abb7e9745c8557447a04f19120b9dab2e34",
+    "assets/candidate_flow.png": "09be0d500db0bf7ea216502a2738d63eda5450a9c4289a52026efd91c55a279d",
+    "assets/recovery_flow.png": "df5fb650283f169e6fe691ee0e136e7b42b7a15f9c4c49e4831bae12047ac151",
+    "assets/data_entities.png": "58b9bdc4bae0de06eb1a9b684427a4c999a4e97bd8f1df2d37d5cbb3e3a6aab5",
+    "assets/control_sequence.png": "8ccf61803049032ec744dcd591fbb45b73997a641a1cbfbae6efa8848cff1a02"
+  },
+  "pre_word_outputs_sha256": {
+    "基于世界模型的机器人抓取搬运系统设计与实现详细设计.docx": "4a2f61c9286a2610863933395f7f0dc1c1c0ecd0ccc9171b026fe80a9a53c0cd",
+    "详细设计.md": "6b99115bd78fb50009d0166ba9925104d71742ab7d2c4fd63e7fd44082bf1722"
+  },
+  "math_checks": [
+    {
+      "latex": "[-1,1]",
+      "source_minus_count": 1,
+      "office_minus_count": 1,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "(p_e,q_e)",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "(p_o,q_o)",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "p_{rel}=R(q_e)^\\top(p_o-p_e),\\qquad q_{rel}=q_e^{-1}\\otimes q_o.",
+      "source_minus_count": 2,
+      "office_minus_count": 2,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "[-1,1]",
+      "source_minus_count": 1,
+      "office_minus_count": 1,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "a_t",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "a_{t+7}",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "z_0=(x_0-\\mu)/s",
+      "source_minus_count": 1,
+      "office_minus_count": 1,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "h_j",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "h_{j+1}=\\operatorname{GRUCell}([z_j,u_j],h_j),\\qquad z_{j+1}=z_j+0.1f_\\Delta(h_{j+1}).",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "f_\\Delta",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "\\mathcal L=\\mathcal L_{pred}+\\mathcal L_p+0.5\\mathcal L_r+0.2\\mathcal L_{rank}.",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "\\mathcal L_{pred}",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "\\mathcal L_p",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "\\mathcal L_r",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "c_k",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "Q_t=[q_t^0,q_t^1]",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "U_k=[q_t^0,q_t^1,c_k,c_k,c_k,c_k,c_k,c_k].",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "p_j",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "r_j",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "S_k=p_{k,H}+\\frac{0.5}{H}\\sum_{j=1}^{H}p_{k,j}-0.5\\max_j r_{k,j}.",
+      "source_minus_count": 1,
+      "office_minus_count": 1,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "u_t",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "a_t",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "a_t=Q_t[0],\\qquad Q_{t+1}=[Q_t[1],u_t].",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "u_t",
+      "source_minus_count": 0,
+      "office_minus_count": 0,
+      "unconverted_commands": false
+    },
+    {
+      "latex": "[-1,1]",
+      "source_minus_count": 1,
+      "office_minus_count": 1,
+      "unconverted_commands": false
+    }
+  ],
+  "verification_note": "Native Word export and per-page visual QA follow authoring; not included in this build receipt."
+}

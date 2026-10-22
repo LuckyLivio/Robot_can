@@ -1,0 +1,121 @@
+{
+  "passed": false,
+  "finished_utc": "2026-10-22T02:07:15.061914+00:00",
+  "source_unchanged": true,
+  "episodes": 1602,
+  "jobs": [
+    {
+      "id": "none_bc_sNone_0",
+      "returncode": 0
+    },
+    {
+      "id": "none_bc_sNone_0.05",
+      "returncode": 0
+    },
+    {
+      "id": "none_full_s17_0",
+      "returncode": 0
+    },
+    {
+      "id": "none_full_s17_0.05",
+      "returncode": 0
+    },
+    {
+      "id": "none_full_s23_0",
+      "returncode": 0
+    },
+    {
+      "id": "none_full_s23_0.05",
+      "returncode": 0
+    },
+    {
+      "id": "none_full_s41_0",
+      "returncode": 0
+    },
+    {
+      "id": "none_full_s41_0.05",
+      "returncode": 0
+    },
+    {
+      "id": "v5_bc_sNone_0",
+      "returncode": 0
+    },
+    {
+      "id": "v5_bc_sNone_0.05",
+      "returncode": 0
+    },
+    {
+      "id": "v5_full_s17_0",
+      "returncode": 0
+    },
+    {
+      "id": "v5_full_s17_0.05",
+      "returncode": 0
+    },
+    {
+      "id": "v5_full_s23_0",
+      "returncode": 0
+    },
+    {
+      "id": "v5_full_s23_0.05",
+      "returncode": 0
+    },
+    {
+      "id": "v5_full_s41_0",
+      "returncode": 0
+    },
+    {
+      "id": "v5_full_s41_0.05",
+      "returncode": 0
+    },
+    {
+      "id": "queue_budget_full_s17_0",
+      "returncode": 1
+    },
+    {
+      "id": "queue_budget_bc_sNone_0",
+      "returncode": 0
+    },
+    {
+      "id": "queue_budget_bc_sNone_0.05",
+      "returncode": 0
+    },
+    {
+      "id": "queue_budget_full_s17_0.05",
+      "returncode": 0
+    },
+    {
+      "id": "queue_budget_full_s23_0",
+      "returncode": 0
+    },
+    {
+      "id": "queue_budget_full_s23_0.05",
+      "returncode": 0
+    },
+    {
+      "id": "queue_budget_full_s41_0",
+      "returncode": 0
+    },
+    {
+      "id": "queue_budget_full_s41_0.05",
+      "returncode": 0
+    },
+    {
+      "id": "observation_legacy_0",
+      "returncode": 0
+    },
+    {
+      "id": "observation_legacy_0.05",
+      "returncode": 1
+    },
+    {
+      "id": "observation_canonical_0",
+      "returncode": 0
+    },
+    {
+      "id": "observation_canonical_0.05",
+      "returncode": 0
+    }
+  ],
+  "elapsed_s": 824.3161679999998
+}

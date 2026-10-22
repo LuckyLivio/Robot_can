@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "verified_utc": "2026-10-22T05:14:47.432218+00:00",
+  "errors": [],
+  "baseline": "bbdbb0da2f5aa6bfda5f820517f40d9b5dbf5672",
+  "pages": 13,
+  "headings_checked": 21,
+  "body_paragraphs_checked": 51,
+  "body_runs_checked": 81,
+  "superscript_citations": [
+    "[1-2]",
+    "[3]",
+    "[4]",
+    "[5]",
+    "[6]"
+  ],
+  "bibliography_labels_on_baseline": true,
+  "configured_heading_4_present_in_text": false,
+  "text_content_preserved": true,
+  "math_objects_preserved": 26,
+  "source_markdown_preserved": true,
+  "layout_profile": {
+    "heading_1": "16pt SimHei centered; one line before and after",
+    "heading_2": "14pt SimHei, one space, 1.5 lines",
+    "heading_3_4": "12pt SimSun, two spaces, 1.5 lines",
+    "body": "12pt SimSun / Times New Roman, firstLineChars=200, 1.5 lines",
+    "body_references": "native superscript; bibliography labels on baseline"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "scope": "One known development demo; evaluator regression check, not new confirmation.",
+  "old_reference": "reproduction\\recovery_v5_20261012_01\\dev_a\\v5_bc_k2_clean",
+  "new_output": "reproduction\\graduation_repairs_20261022_01\\preflight_eval_v5",
+  "old_success": true,
+  "new_success": true,
+  "old_steps": 100,
+  "new_steps": 100,
+  "same_benchmark_trace_length": true,
+  "max_abs_difference_by_field": {
+    "state_before": 0.0,
+    "base_chunk": 0.0,
+    "queue_before": 0.0,
+    "submitted_action": 0.0,
+    "executed_action_before_noise": 0.0,
+    "state_after": 0.0,
+    "executed_action": 0.0
+  },
+  "exact_benchmark_actions": true,
+  "same_recovery_diagnostics": true,
+  "benchmark_timing_n": 100,
+  "stability": {
+    "observed": true,
+    "diagnostic_controls": 20,
+    "all_in_goal": true,
+    "last10_max_speed_m_s": 0.004862855712417513,
+    "stable": true,
+    "scope": "Post-termination open-gripper diagnostic; excluded from benchmark steps and success denominator."
+  }
+}
